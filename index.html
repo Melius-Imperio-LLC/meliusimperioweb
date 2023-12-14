@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Melius Imperio Consulting LLC</title>
-    <!-- Include the common header -->
-    <link rel="import" href="header.html">
+<div id="header-container"></div>
 </head>
 <body>
     <!-- Content of your index.html goes here -->
@@ -676,6 +674,13 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script>
+		// Fetch and include header.html
+		fetch('header.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('header-container').innerHTML = data;
+			});
     
   </body>
 </html>
