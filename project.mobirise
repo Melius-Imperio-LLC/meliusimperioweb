@@ -54,25 +54,12 @@
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
-    "cookiesAlert": {
-      "customDialogSelector": false,
-      "colorText": "#424a4d",
-      "colorBg": "#ffffff",
-      "colorButton": "#000000",
-      "rejectColor": "#ffffff",
-      "colorLink": "#424a4d",
-      "underlineLink": true,
-      "opacityOverlay": "0",
-      "bgOpacity": "100",
-      "text": "We use cookies to give you the best experience. Read our <a href='https://www.termsfeed.com/live/97e1465b-581f-409c-9b84-68fc4672cee2'>cookie policy</a>.",
-      "textButton": "GOT IT",
-      "rejectText": "REJECT"
-    },
-    "uniqCompNum": 123,
+    "uniqCompNum": 124,
     "versionPublish": "5.9.11",
     "screenshot": "screenshot.png",
     "gdpr": false,
-    "google-analytics": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-MFDCBL1HY5\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-MFDCBL1HY5');\n</script>"
+    "google-analytics": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-MFDCBL1HY5\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-MFDCBL1HY5');\n</script>",
+    "cookiesAlert": false
   },
   "pages": {
     "freequote.html": {
