@@ -143,73 +143,83 @@
   </section>
   <!-- ====== Banner End ====== -->
 
-  <!-- ====== Contact Start ====== -->
-  <section id="contact" class="ud-contact">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-xl-8 col-lg-7">
-          <div class="ud-contact-content-wrapper">
-            <div class="ud-contact-title">
-              <span>GET IN TOUCH</span>
-              <h2>
-                Let’s talk about driving sustainable, data‑driven impact!
-              </h2>
-            </div>
-            <div class="ud-contact-info-wrapper">
-              <div class="ud-single-info">
-                <div class="ud-info-icon">
-                  <i class="lni lni-map-marker"></i>
-                </div>
-                <div class="ud-info-meta">
-                  <h5>Our Location</h5>
-                  <p>Chandigarh, India</p>
-                </div>
+    <!-- ====== Contact Start ====== -->
+    <section id="contact" class="ud-contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-8 col-lg-7">
+            <div class="ud-contact-content-wrapper">
+              <div class="ud-contact-title">
+                <span>CONTACT US</span>
+                <h2>
+                  Let’s Connect and Transform Economic Development
+                </h2>
               </div>
-              <div class="ud-single-info">
-                <div class="ud-info-icon">
-                  <i class="lni lni-envelope"></i>
+              <div class="ud-contact-info-wrapper">
+                <div class="ud-single-info">
+                  <div class="ud-info-icon">
+                    <i class="lni lni-map-marker"></i>
+                  </div>
+                  <div class="ud-info-meta">
+                    <h5>Our Locations</h5>
+                    <p>Kigali, Rwanda</p>
+                    <p>New Delhi, India</p>
+                  </div>
                 </div>
-                <div class="ud-info-meta">
-                  <h5>How Can We Help?</h5>
-                  <p>info@mimperio.tech</p>
-                  <p>contact@mimperio.tech</p>
+                <div class="ud-single-info">
+                  <div class="ud-info-icon">
+                    <i class="lni lni-envelope"></i>
+                  </div>
+                  <div class="ud-info-meta">
+                    <h5>How Can We Help?</h5>
+                    <p>info@mimperio.tech</p>
+                    <p>contact@mimperio.tech</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="ud-contact-form-wrapper wow fadeInUp" data-wow-delay=".2s">
-            <h3 class="ud-contact-form-title">Send us a Message</h3>
-            <form class="ud-contact-form">
-              <div class="ud-form-group">
-                <label for="fullName">Full Name*</label>
-                <input type="text" name="fullName" placeholder="Your Full Name" />
-              </div>
-              <div class="ud-form-group">
-                <label for="email">Email*</label>
-                <input type="email" name="email" placeholder="example@mimperio.tech" />
-              </div>
-              <div class="ud-form-group">
-                <label for="phone">Phone*</label>
-                <input type="text" name="phone" placeholder="+91 98765 43210" />
-              </div>
-              <div class="ud-form-group">
-                <label for="message">Message*</label>
-                <textarea name="message" rows="1" placeholder="Type your message here..."></textarea>
-              </div>
-              <div class="ud-form-group mb-0">
-                <button type="submit" class="ud-main-btn">
-                  Send Message
-                </button>
-              </div>
-            </form>
+          <div class="col-xl-4 col-lg-5">
+            <div class="ud-contact-form-wrapper wow fadeInUp" data-wow-delay=".2s">
+              <h3 class="ud-contact-form-title">Send Us a Message</h3>
+
+              <!-- Updated Form for Email Submission -->
+              <form class="ud-contact-form" action="https://formsubmit.co/info@mimperio.tech" method="POST">
+                <div class="ud-form-group">
+                  <label for="fullName">Full Name*</label>
+                  <input type="text" name="fullName" placeholder="Enter your full name" required />
+                </div>
+                <div class="ud-form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" name="email" placeholder="example@mimperio.tech" required />
+                </div>
+                <div class="ud-form-group">
+                  <label for="phone">Phone*</label>
+                  <input type="text" name="phone" placeholder="+91 12345 67890" required />
+                </div>
+                <div class="ud-form-group">
+                  <label for="message">Message*</label>
+                  <textarea name="message" rows="1" placeholder="Type your message here" required></textarea>
+                </div>
+
+                <!-- Hidden Fields for Email Handling -->
+                <input type="hidden" name="_subject" value="New Contact Request">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://mimperio.tech/thankyou.html">
+
+                <div class="ud-form-group mb-0">
+                  <button type="submit" class="ud-main-btn">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- ====== Contact End ====== -->
+    </section>
+    <!-- ====== Contact End ====== -->
 
   <div id="footer-placeholder"></div>
   <!-- ====== Footer Start ======
