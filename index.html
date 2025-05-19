@@ -1125,10 +1125,11 @@
   </script>
 
   <script>
-      let path = window.location.pathname;
-      if (path.endsWith(".html")) {
-        window.history.replaceState(null, null, path.replace(".html", ""));
-      }
+    let path = window.location.pathname;
+    if (path.endsWith(".html")) {
+      let newPath = path.replace(".html", "");
+      window.history.replaceState(null, null, newPath + window.location.search + window.location.hash);
+    }
   </script>
 
 </body>
