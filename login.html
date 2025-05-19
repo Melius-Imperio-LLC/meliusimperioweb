@@ -30,7 +30,9 @@
     <link rel="stylesheet" href="assets/css/ud-styles.css" />
   </head>
   <body>
-    <!-- ====== Header Start ====== -->
+
+    <div id="header-placeholder"></div>
+    <!-- ====== Header Start ======
     <header class="ud-header">
       <div class="container">
         <div class="row">
@@ -117,7 +119,7 @@
         </div>
       </div>
     </header>
-    <!-- ====== Header End ====== -->
+     ====== Header End ====== -->
 
     <!-- ====== Banner Start ====== -->
     <section class="ud-page-banner">
@@ -197,7 +199,8 @@
     </section>
     <!-- ====== Login End ====== -->
 
-    <!-- ====== Footer Start ====== -->
+    <div id="footer-placeholder"></div>
+    <!-- ====== Footer Start ======
     <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
       <div class="shape shape-1">
         <img src="assets/images/footer/shape-1.svg" alt="shape" />
@@ -430,7 +433,7 @@
         </div>
       </div>
     </footer>
-    <!-- ====== Footer End ====== -->
+     ====== Footer End ====== -->
 
     <!-- ====== Back To Top Start ====== -->
     <a href="javascript:void(0)" class="back-to-top">
@@ -442,5 +445,16 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+    // for header and footer
+    function loadHTML(id, file) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => document.getElementById(id).innerHTML = data);
+    }
+
+    loadHTML("header-placeholder", "header.html");
+    loadHTML("footer-placeholder", "footer.html");
+  </script>
   </body>
 </html>
