@@ -55,5 +55,15 @@ word-break: break-word !important;
           <a href="javascript:void(0)" class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
             <i class="lni lni-chevron-up"> </i>
           </a>
+
   <!-- ====== Back To Top End ====== -->
       </div>
+
+
+          <script>
+              let path = window.location.pathname;
+              if (path.endsWith(".html")) {
+                window.history.replaceState(null, null, path.replace(".html", ""));
+              }
+          </script>
+

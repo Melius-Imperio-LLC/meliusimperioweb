@@ -382,5 +382,12 @@
     loadHTML("header-placeholder", "header.html");
     loadHTML("footer-placeholder", "footer.html");
   </script>
+  <script>
+      let path = window.location.pathname;
+      if (path.endsWith(".html")) {
+        window.history.replaceState(null, null, path.replace(".html", ""));
+      }
+  </script>
+
 </body>
 </html>

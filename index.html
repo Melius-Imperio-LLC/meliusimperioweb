@@ -1071,6 +1071,7 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/main.js"></script>
+
   <script>
     // for header and footer
     function loadHTML(id, file) {
@@ -1122,5 +1123,13 @@
     }
     window.document.addEventListener("scroll", onScroll);
   </script>
+
+  <script>
+      let path = window.location.pathname;
+      if (path.endsWith(".html")) {
+        window.history.replaceState(null, null, path.replace(".html", ""));
+      }
+  </script>
+
 </body>
 </html>
