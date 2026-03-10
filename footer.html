@@ -232,7 +232,9 @@
           </p>
 
           <script>
-            document.getElementById("current-year").innerHTML = new Date().getFullYear();
+            window.addEventListener('DOMContentLoaded', (event) => {
+              document.getElementById("current-year").textContent = new Date().getFullYear();
+            });
           </script>
         </div>
       </div>
