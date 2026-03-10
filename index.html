@@ -55,17 +55,9 @@
         }
       </style>
 
-      <!-- Translation -->
-      <div class="ud-language-wrapper" style="position: relative; z-index: 9999; background: #f4f7fa; border-bottom: 1px solid #ddd;">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 d-flex justify-content-end align-items-center" style="height: 40px;">
-              <span style="font-size: 12px; margin-right: 10px; color: #333; font-weight: 600;">Select Language:</span>
-              <div id="google_translate_element"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Elfsight Website Translator | Untitled Website Translator -->
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="elfsight-app-958649a7-6d5c-4c96-8b48-c46f6b1bf7a5" data-elfsight-app-lazy></div>
 
   <div id="header-placeholder"></div>
   <!-- ====== Header Start ======
@@ -1518,29 +1510,6 @@
         setTimeout(() => {
           document.getElementById("preloader").style.display = "none";
         }, 1000); // Adjust time as needed (2.5 seconds)
-      };
-    </script>
-
-<!-- Translations-->
-
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-          pageLanguage: 'en',
-          includedLanguages: 'rw,sw,fr,hi,en',
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false
-        }, 'google_translate_element');
-      }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    <script>
-      window.onload = function() {
-        var yearSpan = document.getElementById("current-year");
-        if(yearSpan) {
-          yearSpan.textContent = new Date().getFullYear();
-        }
       };
     </script>
 
