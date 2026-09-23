@@ -1,1520 +1,841 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mimperio | Innovative Data Solutions &amp; AI Solutions</title>
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="Mimperio - Pioneering Development Economics Consulting with AI &amp; Green Compute">
-  <meta name="description" content="Mimperio empowers organizations with ground-level data integration, impact evaluation, and AI-enhanced tools—all designed for sustainable and scalable development economics consulting." />
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mimperio.tech/">
-  <meta property="og:title" content="Mimperio - Innovative Development Economics Consulting">
-  <meta property="og:description" content="Transforming grassroots data into actionable impact through custom CLIs, on‑device AI, and eco‑friendly technology." />
-  <meta property="og:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg">
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://mimperio.tech/">
-  <meta property="twitter:title" content="Mimperio - Innovative Development Economics Consulting">
-  <meta property="twitter:description" content="Transforming grassroots data into actionable impact through custom, sustainable tools and AI-driven insights." />
-  <meta property="twitter:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg">
-  <!--====== Favicon Icon ======-->
-  <link
-    rel="shortcut icon"
-    href="assets/images/favicon.svg"
-    type="image/svg"
-  />
-  <!-- ===== All CSS files ===== -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/animate.css" />
-  <link rel="stylesheet" href="assets/css/lineicons.css" />
-  <link rel="stylesheet" href="assets/css/ud-styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mimperio | Data, AI and Software Platforms for Development and Enterprise</title>
+  <meta name="description" content="Mimperio (mimperio.tech) builds data platforms, applied AI workflows, and custom software for governments, research institutions, and enterprises.">
+  <link rel="canonical" href="https://mimperio.tech/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20rx%3D%2242%22%20fill%3D%22%2304070e%22/%3E%3Cline%20x1%3D%2283.1%22%20y1%3D%2270.5%22%20x2%3D%2276.7%22%20y2%3D%2259.4%22%20stroke%3D%22%233ea8c8%22%20stroke-width%3D%229%22%20stroke-linecap%3D%22round%22/%3E%3Cline%20x1%3D%22119.2%22%20y1%3D%2272.0%22%20x2%3D%22122.3%22%20y2%3D%2267.6%22%20stroke%3D%22%233ea8c8%22%20stroke-width%3D%229%22%20stroke-linecap%3D%22round%22/%3E%3Cline%20x1%3D%2266.1%22%20y1%3D%22102.7%22%20x2%3D%2253.4%22%20y2%3D%22103.8%22%20stroke%3D%22%233ea8c8%22%20stroke-width%3D%229%22%20stroke-linecap%3D%22round%22/%3E%3Cline%20x1%3D%2280.4%22%20y1%3D%22127.8%22%20x2%3D%2274.4%22%20y2%3D%22136.3%22%20stroke%3D%22%233ea8c8%22%20stroke-width%3D%229%22%20stroke-linecap%3D%22round%22/%3E%3Cline%20x1%3D%22111.6%22%20y1%3D%22132.0%22%20x2%3D%22115.3%22%20y2%3D%22142.3%22%20stroke%3D%22%233ea8c8%22%20stroke-width%3D%229%22%20stroke-linecap%3D%22round%22/%3E%3Cline%20x1%3D%22129.5%22%20y1%3D%22116.9%22%20x2%3D%22137.5%22%20y2%3D%22121.5%22%20stroke%3D%22%233ea8c8%22%20stroke-width%3D%229%22%20stroke-linecap%3D%22round%22/%3E%3Cg%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%22100%22%20r%3D%2230%22%20fill%3D%22none%22%20stroke%3D%22%233ea8c8%22%20stroke-width%3D%2210%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%22100%22%20r%3D%2214%22%20fill%3D%22none%22%20stroke%3D%22%233ea8c8%22%20stroke-width%3D%229%22/%3E%3C/g%3E%3Ccircle%20cx%3D%2269%22%20cy%3D%2246%22%20r%3D%2212%22%20fill%3D%22none%22%20stroke%3D%22%233ea8c8%22%20stroke-width%3D%227%22/%3E%3Ccircle%20cx%3D%22135%22%20cy%3D%2249%22%20r%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22%233ea8c8%22%20stroke-width%3D%229%22/%3E%3Ccircle%20cx%3D%2238%22%20cy%3D%22105%22%20r%3D%2212%22%20fill%3D%22none%22%20stroke%3D%22%233ea8c8%22%20stroke-width%3D%227%22/%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%22151%22%20r%3D%2214%22%20fill%3D%22none%22%20stroke%3D%22%233ea8c8%22%20stroke-width%3D%228%22/%3E%3Ccircle%20cx%3D%22121%22%20cy%3D%22158%22%20r%3D%2213%22%20fill%3D%22none%22%20stroke%3D%22%233ea8c8%22%20stroke-width%3D%227.5%22/%3E%3Ccircle%20cx%3D%22154%22%20cy%3D%22131%22%20r%3D%2215%22%20fill%3D%22none%22%20stroke%3D%22%233ea8c8%22%20stroke-width%3D%228%22/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+/* =========================================================================
+   MIMPERIO (mimperio.tech) - production stylesheet
+   Space Grotesk (display) + Manrope (body) + Montserrat (brand). No framework.
+   ========================================================================= */
 
+:root {
+  --bg:        #04070e;
+  --bg-2:      #070c16;
+  --surface:   #0b1220;
+  --surface-2: #101a2c;
+  --line:      #1c2740;
+  --line-soft: #141d30;
+  --text:      #e6ecf5;
+  --text-dim:  #9aa7bd;
+  --text-mute: #64748b;
+  --cyan:      #3ea8c8;
+  --cyan-lt:   #5cc6e6;
+  --emerald:   #34d3a6;
+  --amber:     #f0b429;
+  --violet:    #8b8bf0;
+  --maxw:      1200px;
+  --font-display: 'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Manrope', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-brand: 'Montserrat', var(--font-body);
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
 
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font-family: var(--font-body); font-size: 16.5px; line-height: 1.68;
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; overflow-x: hidden;
+}
+
+/* ambient aurora + faint grid */
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -2; pointer-events: none;
+  background:
+    radial-gradient(1100px 620px at 15% -8%, rgba(62,168,200,0.14), transparent 60%),
+    radial-gradient(900px 600px at 95% 4%, rgba(52,211,166,0.09), transparent 60%);
+  animation: auroraShift 16s ease-in-out infinite alternate;
+}
+@keyframes auroraShift { 0%{transform:translate3d(0,0,0)} 100%{transform:translate3d(0,-18px,0)} }
+body::after {
+  content: ""; position: fixed; inset: 0; z-index: -2; pointer-events: none; opacity: .5;
+  background-image:
+    linear-gradient(to right, rgba(148,163,184,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148,163,184,0.04) 1px, transparent 1px);
+  background-size: 54px 54px;
+  mask-image: radial-gradient(circle at 50% -5%, #000 0%, transparent 78%);
+}
+
+a { color: inherit; text-decoration: none; }
+img, svg { display: block; max-width: 100%; }
+
+h1,h2,h3,h4 { color:#fff; font-family: var(--font-display); line-height:1.08; margin:0; letter-spacing:-0.02em; font-weight:700; }
+h1 { font-size: clamp(2.4rem, 5.2vw, 4rem); font-weight: 700; }
+h2 { font-size: clamp(1.75rem, 3.6vw, 2.6rem); }
+h3 { font-size: 1.2rem; font-weight: 600; letter-spacing: -0.01em; }
+p { margin: 0; }
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+.mono { font-family: var(--font-mono); }
+.dim  { color: var(--text-dim); }
+.mute { color: var(--text-mute); }
+.center { text-align: center; }
+.grad { background: linear-gradient(100deg, var(--cyan-lt), var(--emerald)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* ---- eyebrow (refined, not a pill) ---- */
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--cyan-lt); font-weight: 500;
+}
+.eyebrow::before { content: ""; width: 26px; height: 1px; background: var(--cyan); opacity: .7; }
+/* legacy .kicker restyled to match eyebrow (no heavy pill) */
+.kicker {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--cyan-lt); font-weight: 500;
+  padding: 0; border: 0; background: none;
+}
+.kicker::before { content: ""; width: 24px; height: 1px; background: var(--cyan); opacity: .7; }
+.kicker .dot { display: none; }
+
+/* ---- buttons ---- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+  font-family: var(--font-body); font-size: 0.92rem; font-weight: 700;
+  padding: 13px 22px; border-radius: 11px; cursor: pointer;
+  border: 1px solid transparent; transition: transform .16s ease, box-shadow .16s ease, background .16s, border-color .16s, color .16s; white-space: nowrap;
+}
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: linear-gradient(100deg, var(--cyan), var(--emerald)); color: #041016; }
+.btn-primary:hover { box-shadow: 0 10px 34px -8px rgba(62,168,200,0.6); transform: translateY(-1px); }
+.btn-ghost { background: rgba(255,255,255,0.02); color: var(--text); border-color: var(--line); }
+.btn-ghost:hover { border-color: var(--cyan); color: #fff; }
+.btn-sm { padding: 9px 15px; font-size: 0.82rem; }
+
+/* ---- header / nav ---- */
+.site-header { position: sticky; top: 0; z-index: 70; backdrop-filter: blur(16px); background: rgba(4,7,14,0.82); border-bottom: 1px solid var(--line-soft); }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 72px; }
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand .glyph { width: 40px; height: 40px; border-radius: 11px; border: 1px solid rgba(62,168,200,0.4); background: #060e1a; display: flex; align-items: center; justify-content: center; padding: 5px; overflow: visible; }
+.brand .glyph svg { width: 100%; height: 100%; overflow: visible; }
+.brand .name { font-family: var(--font-brand); font-weight: 900; letter-spacing: 0.01em; color: #fff; font-size: 1.06rem; line-height: 1; }
+.brand .tag  { font-family: var(--font-brand); font-weight: 600; letter-spacing: 0.24em; font-size: 0.5rem; color: var(--cyan); text-transform: uppercase; }
+.nav-links { display: flex; align-items: center; gap: 24px; }
+.nav-links a { font-size: 0.9rem; color: var(--text-dim); transition: color .15s; font-weight: 500; }
+.nav-links a:hover, .nav-links a.active { color: #fff; }
+.nav-tools { display: flex; align-items: center; gap: 14px; }
+.nav-toggle { display: none; background: none; border: 0; color: #fff; cursor: pointer; padding: 6px; }
+.mobile-menu { display: none; border-top: 1px solid var(--line-soft); padding: 8px 0 18px; }
+.mobile-menu a { display: block; padding: 12px 24px; color: var(--text-dim); }
+.mobile-menu.open { display: block; }
+
+/* ---- language switcher (drives hidden Google Translate) ---- */
+.lang { position: relative; }
+.lang-btn { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-body); font-size: 0.84rem; font-weight: 600; color: var(--text-dim); background: rgba(255,255,255,0.03); border: 1px solid var(--line); padding: 8px 12px; border-radius: 10px; cursor: pointer; transition: border-color .15s, color .15s; }
+.lang-btn:hover { border-color: var(--cyan); color: #fff; }
+.lang-btn svg { width: 15px; height: 15px; }
+.lang-menu { position: absolute; right: 0; top: calc(100% + 8px); min-width: 190px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 6px; box-shadow: 0 24px 60px -18px rgba(0,0,0,0.8); opacity: 0; visibility: hidden; transform: translateY(-6px); transition: all .16s ease; z-index: 90; }
+.lang.open .lang-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+.lang-menu button { display: flex; width: 100%; align-items: center; gap: 10px; background: none; border: 0; color: var(--text-dim); font-family: var(--font-body); font-size: 0.88rem; font-weight: 500; text-align: left; padding: 10px 12px; border-radius: 8px; cursor: pointer; }
+.lang-menu button:hover { background: rgba(62,168,200,0.1); color: #fff; }
+.lang-menu button.active { color: var(--cyan-lt); }
+.lang-menu .flag { font-size: 1rem; }
+.lang-menu .native { color: var(--text-mute); font-size: 0.74rem; margin-left: auto; }
+
+/* hide Google Translate default chrome */
+.goog-te-banner-frame, .skiptranslate iframe { display: none !important; }
+body { top: 0 !important; }
+.goog-te-gadget { height: 0; overflow: hidden; }
+#google_translate_element { position: absolute; left: -9999px; height: 0; }
+.goog-text-highlight { background: none !important; box-shadow: none !important; }
+font { background: transparent !important; box-shadow: none !important; }
+
+/* ---- section rhythm ---- */
+.section { padding: 92px 0; }
+.section-sm { padding: 58px 0; }
+.section-head { max-width: 660px; display: flex; flex-direction: column; gap: 16px; margin-bottom: 52px; }
+.section-head.center { margin-left: auto; margin-right: auto; align-items: center; text-align: center; }
+.lead { font-size: 1.1rem; color: var(--text-dim); max-width: 62ch; line-height: 1.7; }
+.divider { height: 1px; border: 0; background: linear-gradient(90deg, transparent, var(--line), transparent); }
+
+/* ---- scroll reveal ---- */
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
+.reveal.in { opacity: 1; transform: none; }
+.reveal.d1 { transition-delay: .08s; } .reveal.d2 { transition-delay: .16s; }
+.reveal.d3 { transition-delay: .24s; } .reveal.d4 { transition-delay: .32s; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+/* ---- hero ---- */
+.hero { padding: 96px 0 76px; position: relative; }
+.hero-grid { display: grid; grid-template-columns: 1.12fr 0.88fr; gap: 56px; align-items: center; }
+.hero h1 { margin-top: 22px; }
+.hero .lead { margin-top: 20px; }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
+.hero-meta { display: flex; gap: 26px; margin-top: 34px; flex-wrap: wrap; }
+.hero-meta .hm { display: flex; flex-direction: column; }
+.hero-meta .hm b { font-family: var(--font-display); font-size: 1.5rem; color: #fff; }
+.hero-meta .hm span { font-size: 0.76rem; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* ---- terminal panel ---- */
+.panel { background: linear-gradient(180deg, var(--surface), var(--bg-2)); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; box-shadow: 0 40px 90px -40px rgba(0,0,0,0.9); }
+.panel-bar { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; border-bottom: 1px solid var(--line); background: rgba(255,255,255,0.02); }
+.panel-bar .dots { display: flex; gap: 7px; }
+.panel-bar .dots i { width: 11px; height: 11px; border-radius: 50%; display: block; }
+.panel-body { padding: 20px; font-family: var(--font-mono); font-size: 0.8rem; line-height: 2; color: var(--text-dim); min-height: 260px; }
+.panel-body .c { color: var(--cyan-lt); } .panel-body .e { color: var(--emerald); } .panel-body .w { color: var(--amber); }
+.term-cursor::after { content: "▋"; color: var(--cyan-lt); animation: blink 1.1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+.term-actions { display: flex; align-items: center; justify-content: space-between; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line-soft); }
+.term-btn { font-family: var(--font-mono); font-size: 0.72rem; color: var(--cyan-lt); background: rgba(62,168,200,0.12); border: 1px solid rgba(62,168,200,0.35); padding: 7px 12px; border-radius: 7px; cursor: pointer; }
+.term-btn:hover { background: rgba(62,168,200,0.2); }
+.live-dot { display: inline-flex; align-items: center; gap: 6px; font-size: 0.66rem; color: var(--emerald); text-transform: uppercase; letter-spacing: 0.1em; }
+.live-dot i { width: 7px; height: 7px; border-radius: 50%; background: var(--emerald); box-shadow: 0 0 8px var(--emerald); animation: livePulse 1.6s ease-in-out infinite; }
+@keyframes livePulse { 50% { opacity: .35; } }
+
+/* ---- counters ribbon ---- */
+.ribbon { border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); background: rgba(7,12,22,0.6); }
+.ribbon-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; padding: 40px 0; }
+.stat .n { font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: #fff; }
+.stat .n.cy { color: var(--cyan-lt); } .stat .n.em { color: var(--emerald); }
+.stat .l { font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-mute); margin-top: 6px; }
+
+/* ---- marquee (tech strip) ---- */
+.marquee { overflow: hidden; border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); padding: 22px 0; -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
+.marquee-track { display: flex; gap: 46px; width: max-content; animation: scrollX 32s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-track span { font-family: var(--font-mono); font-size: 0.92rem; color: var(--text-mute); white-space: nowrap; letter-spacing: 0.04em; }
+@keyframes scrollX { to { transform: translateX(-50%); } }
+
+/* ---- divisions (editorial rows) ---- */
+.division { display: grid; grid-template-columns: 210px 1fr; gap: 36px; padding: 38px 0; border-bottom: 1px solid var(--line-soft); }
+.division:last-child { border-bottom: 0; }
+.division .idx { font-family: var(--font-mono); color: var(--cyan); font-size: 0.82rem; letter-spacing: 0.1em; }
+.division h3 { font-size: 1.6rem; margin-bottom: 8px; }
+.division .meta { font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-mute); letter-spacing: 0.06em; margin-top: 12px; }
+
+/* ---- cards ---- */
+.grid { display: grid; gap: 22px; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.card { position: relative; background: var(--surface); border: 1px solid var(--line-soft); border-radius: 16px; padding: 26px; transition: border-color .2s, transform .2s, box-shadow .2s; overflow: hidden; }
+.card::after { content: ""; position: absolute; left: 0; top: 0; height: 2px; width: 0; background: linear-gradient(90deg, var(--cyan), var(--emerald)); transition: width .3s ease; }
+.card:hover { border-color: rgba(62,168,200,0.4); transform: translateY(-3px); box-shadow: 0 24px 50px -28px rgba(0,0,0,0.9); }
+.card:hover::after { width: 100%; }
+.card .ic { width: 44px; height: 44px; border-radius: 11px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; border: 1px solid var(--line); color: var(--cyan-lt); background: rgba(62,168,200,0.07); font-size: 1.2rem; }
+.card h3 { margin-bottom: 9px; }
+.card p { font-size: 0.94rem; color: var(--text-dim); }
+.card ul { list-style: none; padding: 0; margin: 16px 0 0; border-top: 1px solid var(--line-soft); padding-top: 14px; }
+.card ul li { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-dim); padding: 4px 0; display: flex; gap: 9px; }
+.card ul li::before { content: "▸"; color: var(--cyan); }
+
+/* ---- maturity tags ---- */
+.tag { font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 9px; border-radius: 6px; border: 1px solid; display: inline-block; }
+.tag.available { color: var(--emerald); border-color: rgba(52,211,166,0.4); background: rgba(52,211,166,0.08); }
+.tag.beta { color: var(--cyan-lt); border-color: rgba(92,198,230,0.4); background: rgba(92,198,230,0.08); }
+.tag.pilot { color: var(--violet); border-color: rgba(139,139,240,0.4); background: rgba(139,139,240,0.08); }
+.tag.roadmap { color: var(--amber); border-color: rgba(240,180,41,0.4); background: rgba(240,180,41,0.08); }
+
+/* ---- catalog ---- */
+.catblock { padding: 44px 0; border-top: 1px solid var(--line-soft); }
+.catblock .cathead { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
+.catblock .cathead h2 { font-size: 1.6rem; }
+.catblock .cathead .k { font-family: var(--font-mono); font-size: 0.74rem; color: var(--cyan); letter-spacing: 0.12em; text-transform: uppercase; }
+.prod { display: grid; grid-template-columns: 190px 1fr auto; gap: 22px; align-items: start; padding: 22px; border: 1px solid var(--line-soft); border-radius: 14px; background: var(--surface); margin-bottom: 14px; transition: border-color .18s, transform .18s; }
+.prod:hover { border-color: rgba(62,168,200,0.35); transform: translateX(3px); }
+.prod .pname { font-family: var(--font-display); font-weight: 600; color: #fff; font-size: 1.05rem; }
+.prod .pcode { font-family: var(--font-mono); font-size: 0.68rem; color: var(--cyan); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 4px; }
+.prod .pdesc { font-size: 0.9rem; color: var(--text-dim); }
+.prod .pmeta { text-align: right; white-space: nowrap; }
+
+/* ---- process pipeline ---- */
+.pipeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
+.pnode { padding: 26px 22px; border: 1px solid var(--line-soft); background: var(--surface); position: relative; }
+.pnode:first-child { border-radius: 14px 0 0 14px; }
+.pnode:last-child { border-radius: 0 14px 14px 0; }
+.pnode:not(:last-child) { border-right: 0; }
+.pnode .ph { font-family: var(--font-mono); font-size: 0.72rem; color: var(--cyan); letter-spacing: 0.1em; }
+.pnode h3 { font-size: 1.08rem; margin: 10px 0; }
+.pnode p { font-size: 0.86rem; color: var(--text-dim); }
+.pflow { position: absolute; top: 0; left: 0; height: 2px; width: 100%; background: linear-gradient(90deg, var(--cyan), var(--emerald)); background-size: 200% 100%; animation: flowLine 3s linear infinite; }
+@keyframes flowLine { to { background-position: -200% 0; } }
+
+/* ---- steps (fallback grid) ---- */
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.step { padding: 24px; border: 1px solid var(--line-soft); border-radius: 14px; background: var(--surface); }
+.step .ph { font-family: var(--font-mono); font-size: 0.72rem; color: var(--cyan); letter-spacing: 0.1em; }
+.step h3 { font-size: 1.05rem; margin: 9px 0; }
+.step p { font-size: 0.86rem; color: var(--text-dim); }
+
+/* ---- tabs ---- */
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 26px; }
+.tab { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim); background: var(--surface); border: 1px solid var(--line-soft); padding: 10px 16px; border-radius: 10px; cursor: pointer; transition: all .15s; }
+.tab:hover { color: #fff; }
+.tab.active { color: var(--cyan-lt); border-color: rgba(62,168,200,0.5); background: rgba(62,168,200,0.08); }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; animation: fadeIn .35s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* ---- audience rows ---- */
+.aud { padding: 30px 0; border-bottom: 1px solid var(--line-soft); display: grid; grid-template-columns: 240px 1fr; gap: 32px; }
+.aud:last-child { border-bottom: 0; }
+.aud h3 { color: var(--cyan-lt); font-size: 1.3rem; }
+.aud ul { margin: 0; padding-left: 18px; color: var(--text-dim); font-size: 0.94rem; }
+.aud ul li { margin: 7px 0; }
+
+/* ---- FAQ accordion ---- */
+.faq { border-top: 1px solid var(--line-soft); }
+.faq-item { border-bottom: 1px solid var(--line-soft); }
+.faq-q { display: flex; align-items: center; justify-content: space-between; gap: 20px; width: 100%; text-align: left; background: none; border: 0; color: #fff; font-family: var(--font-display); font-size: 1.08rem; font-weight: 500; padding: 24px 0; cursor: pointer; }
+.faq-q .ind { color: var(--cyan); font-size: 1.5rem; line-height: 1; transition: transform .25s; flex-shrink: 0; }
+.faq-item.open .faq-q .ind { transform: rotate(45deg); }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+.faq-a p { padding: 0 0 24px; color: var(--text-dim); font-size: 0.96rem; max-width: 68ch; }
+
+/* ---- pricing cards ---- */
+.tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: stretch; }
+.tier { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line-soft); border-radius: 18px; padding: 30px; }
+.tier.feat { border-color: rgba(62,168,200,0.6); box-shadow: 0 30px 70px -34px rgba(62,168,200,0.5); position: relative; }
+.tier.feat .flag { position: absolute; top: -12px; left: 30px; background: linear-gradient(100deg, var(--cyan), var(--emerald)); color: #041016; font-family: var(--font-mono); font-size: 0.64rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 12px; border-radius: 6px; }
+.tier .tname { font-family: var(--font-mono); font-size: 0.74rem; color: var(--cyan); text-transform: uppercase; letter-spacing: 0.1em; }
+.tier h3 { font-size: 1.5rem; margin: 6px 0 14px; }
+.tier .price { font-family: var(--font-display); font-size: 2rem; color: #fff; margin-bottom: 4px; }
+.tier .price small { font-size: 0.9rem; color: var(--text-mute); font-family: var(--font-body); }
+.tier ul { list-style: none; padding: 18px 0 0; margin: 18px 0 26px; border-top: 1px solid var(--line-soft); flex-grow: 1; }
+.tier ul li { font-size: 0.9rem; color: var(--text-dim); padding: 7px 0; display: flex; gap: 10px; }
+.tier ul li::before { content: "✓"; color: var(--emerald); font-weight: 700; }
+
+/* ---- insights / articles ---- */
+.post { display: grid; grid-template-columns: 150px 1fr; gap: 26px; padding: 28px 0; border-bottom: 1px solid var(--line-soft); align-items: baseline; }
+.post .pdate { font-family: var(--font-mono); font-size: 0.76rem; color: var(--text-mute); }
+.post h3 { font-size: 1.3rem; margin-bottom: 8px; }
+.post h3 a:hover { color: var(--cyan-lt); }
+.post p { color: var(--text-dim); font-size: 0.94rem; }
+.post .cat { font-family: var(--font-mono); font-size: 0.68rem; color: var(--cyan); text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* ---- forms ---- */
+.field { margin-bottom: 16px; }
+.field label { display: block; font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-dim); margin-bottom: 7px; }
+.field input, .field select, .field textarea { width: 100%; padding: 12px 14px; border-radius: 10px; background: var(--bg-2); border: 1px solid var(--line); color: var(--text); font-family: var(--font-body); font-size: 0.94rem; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--cyan); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-note { font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-mute); text-align: center; margin-top: 10px; }
+.form-status { display: none; font-family: var(--font-mono); font-size: 0.82rem; color: var(--emerald); text-align: center; margin-top: 12px; }
+
+/* ---- CTA ---- */
+.cta { border: 1px solid rgba(62,168,200,0.3); border-radius: 22px; padding: 54px; text-align: center; background: radial-gradient(600px 300px at 50% 0%, rgba(62,168,200,0.1), transparent 70%), var(--surface); }
+.cta h2 { margin-bottom: 14px; }
+
+/* ---- chips ---- */
+.badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.chip { font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-dim); border: 1px solid var(--line); border-radius: 8px; padding: 8px 13px; }
+.stack-sm { display: flex; flex-direction: column; gap: 10px; }
+
+/* ---- footer ---- */
+.site-footer { border-top: 1px solid var(--line-soft); background: var(--bg-2); padding: 60px 0 34px; margin-top: 40px; }
+.foot-grid { display: grid; grid-template-columns: 1.7fr 1fr 1fr 1fr; gap: 36px; }
+.foot-grid h4 { font-family: var(--font-display); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: #fff; margin-bottom: 15px; }
+.foot-grid ul { list-style: none; margin: 0; padding: 0; }
+.foot-grid ul li { margin: 9px 0; }
+.foot-grid ul li a { font-size: 0.88rem; color: var(--text-dim); }
+.foot-grid ul li a:hover { color: var(--cyan-lt); }
+.foot-about p { font-size: 0.9rem; color: var(--text-dim); margin: 14px 0; max-width: 36ch; }
+.foot-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line-soft); font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-mute); }
+
+/* ---- 404 ---- */
+.notfound { min-height: 66vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 18px; }
+.notfound .code { font-family: var(--font-display); font-size: 5rem; font-weight: 700; color: var(--cyan-lt); }
+
+/* ---- logo animation ---- */
+.mi-logo .mi-node { transform-box: fill-box; transform-origin: center; animation: miPulse 3s ease-in-out infinite; }
+.mi-logo .mi-n2 { animation-delay: .3s; } .mi-logo .mi-n3 { animation-delay: .6s; }
+.mi-logo .mi-n4 { animation-delay: .9s; } .mi-logo .mi-n5 { animation-delay: 1.2s; } .mi-logo .mi-n6 { animation-delay: 1.5s; }
+.mi-logo .mi-core { transform-box: fill-box; transform-origin: center; animation: miGlow 4s ease-in-out infinite; }
+@keyframes miPulse { 0%,100% { opacity: .8; transform: scale(1); } 50% { opacity: 1; transform: scale(1.14); } }
+@keyframes miGlow { 0%,100% { opacity: .9; } 50% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .mi-logo .mi-node, .mi-logo .mi-core, .marquee-track, .pflow, body::before { animation: none; } }
+
+/* ---- responsive ---- */
+@media (max-width: 960px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .ribbon-grid { grid-template-columns: repeat(2, 1fr); }
+  .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; }
+  .steps, .pipeline { grid-template-columns: 1fr 1fr; }
+  .pnode { border-radius: 14px !important; border-right: 1px solid var(--line-soft) !important; }
+  .tiers { grid-template-columns: 1fr; }
+  .foot-grid { grid-template-columns: 1fr 1fr; }
+  .division, .aud { grid-template-columns: 1fr; gap: 12px; }
+}
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .nav-toggle { display: block; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .steps, .pipeline { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .foot-grid { grid-template-columns: 1fr; }
+  .prod, .post { grid-template-columns: 1fr; }
+  .prod .pmeta, .post .pdate { text-align: left; }
+  .ribbon-grid { grid-template-columns: 1fr 1fr; }
+  .cta { padding: 34px 22px; }
+  .section { padding: 64px 0; }
+}
+
+  </style>
+  <noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
 </head>
 <body>
-
-      <!-- Preloader -->
-      <div id="preloader">
-        <img src="assets/images/logo/logo-2.gif" alt="Loading..." />
-      </div>
-
-      <style>
-        /* Preloader Styling */
-        #preloader {
-          position: fixed;
-          width: 100%;
-          height: 100%;
-          background: white;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          z-index: 9999;
-        }
-      </style>
-
-      <!-- Elfsight Website Translator | Untitled Website Translator -->
-      <script src="https://elfsightcdn.com/platform.js" async></script>
-      <div class="elfsight-app-958649a7-6d5c-4c96-8b48-c46f6b1bf7a5" ></div>
-
-      <!-- Elfsight Popup | Untitled Popup -->
-      <script src="https://elfsightcdn.com/platform.js" async></script>
-      <div class="elfsight-app-4c20b54b-fb99-4e68-8eab-057bb6e66498" data-elfsight-app-lazy></div>
-
-  <div id="header-placeholder"></div>
-  <!-- ====== Header Start ======
-  <header class="ud-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">
-              <img src="assets/images/logo/logo.svg" alt="Mimperio Logo" />
-            </a>
-            <button class="navbar-toggler">
-              <span class="toggler-icon"> </span>
-              <span class="toggler-icon"> </span>
-              <span class="toggler-icon"> </span>
-            </button>
-            <div class="navbar-collapse">
-              <ul id="nav" class="navbar-nav mx-auto">
-                <li class="nav-item">
-                  <a class="ud-menu-scroll" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="ud-menu-scroll" href="#features">Tools</a>
-                </li>
-                <li class="nav-item">
-                  <a class="ud-menu-scroll" href="#pricing">Solutions Packages</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="ud-menu-scroll" href="#team">Team</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="ud-menu-scroll" href="#contact">Contact Us</a>
-                </li>
-                <li class="nav-item nav-item-has-children">
-                  <a href="javascript:void(0)"> Insights </a>
-                  <ul class="ud-submenu">
-
-                    <li class="ud-submenu-item">
-                      <a href="about.html" class="ud-submenu-link">
-                        About Mimperio
-                      </a>
-                    </li>
-
-                    <li class="ud-submenu-item">
-                      <a href="pricing.html" class="ud-submenu-link">
-                        Our Solutions
-                      </a>
-                    </li>
-
-                    <li class="ud-submenu-item">
-                      <a href="contact.html" class="ud-submenu-link">
-                        Contact Mimperio
-                      </a>
-                    </li>
-
-                    <li class="ud-submenu-item">
-                      <a href="blog.html" class="ud-submenu-link">
-                        Blog
-                      </a>
-                    </li>
-
-                    <li class="ud-submenu-item">
-                      <a href="blog-details.html" class="ud-submenu-link">
-                        Advanced Insights
-                      </a>
-                    </li>
-
-                    <li class="ud-submenu-item">
-                      <a href="login.html" class="ud-submenu-link">
-                        Client Sign In
-                      </a>
-                    </li>
-                    <li class="ud-submenu-item">
-                      <a href="404.html" class="ud-submenu-link">404 Page</a>
-                    </li>
-
-                  </ul>
-                </li>
-              </ul>
-            </div>
-
-            <div class="navbar-btn d-none d-sm-inline-block">
-              <a href="login.html" class="ud-main-btn ud-login-btn">
-                Sign In
-              </a>
-              <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
-                Join Mimperio
-              </a>
-            </div>
-
-          </nav>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <span class="glyph"><svg class="mi-logo" viewBox="0 0 200 200" width="30" height="30" role="img" aria-label="Mimperio"><line x1="83.1" y1="70.5" x2="76.7" y2="59.4" stroke="#3ea8c8" stroke-width="9" stroke-linecap="round"/><line x1="119.2" y1="72.0" x2="122.3" y2="67.6" stroke="#3ea8c8" stroke-width="9" stroke-linecap="round"/><line x1="66.1" y1="102.7" x2="53.4" y2="103.8" stroke="#3ea8c8" stroke-width="9" stroke-linecap="round"/><line x1="80.4" y1="127.8" x2="74.4" y2="136.3" stroke="#3ea8c8" stroke-width="9" stroke-linecap="round"/><line x1="111.6" y1="132.0" x2="115.3" y2="142.3" stroke="#3ea8c8" stroke-width="9" stroke-linecap="round"/><line x1="129.5" y1="116.9" x2="137.5" y2="121.5" stroke="#3ea8c8" stroke-width="9" stroke-linecap="round"/><g class="mi-core"><circle cx="100" cy="100" r="30" fill="none" stroke="#3ea8c8" stroke-width="10"/><circle cx="100" cy="100" r="14" fill="none" stroke="#3ea8c8" stroke-width="9"/></g><circle class="mi-node mi-n1" cx="69" cy="46" r="12" fill="none" stroke="#3ea8c8" stroke-width="7"/><circle class="mi-node mi-n2" cx="135" cy="49" r="18" fill="none" stroke="#3ea8c8" stroke-width="9"/><circle class="mi-node mi-n3" cx="38" cy="105" r="12" fill="none" stroke="#3ea8c8" stroke-width="7"/><circle class="mi-node mi-n4" cx="64" cy="151" r="14" fill="none" stroke="#3ea8c8" stroke-width="8"/><circle class="mi-node mi-n5" cx="121" cy="158" r="13" fill="none" stroke="#3ea8c8" stroke-width="7.5"/><circle class="mi-node mi-n6" cx="154" cy="131" r="15" fill="none" stroke="#3ea8c8" stroke-width="8"/></svg></span>
+        <span><span class="name">MIMPERIO</span><br><span class="tag">TECH DATA IMPACT</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="products.html" data-nav="products">Products</a>
+        <a href="ai-workflows.html" data-nav="ai">AI Workflows</a>
+        <a href="solutions.html" data-nav="solutions">Solutions</a>
+        <a href="pricing.html" data-nav="pricing">Pricing</a>
+        <a href="insights.html" data-nav="insights">Insights</a>
+        <a href="about.html" data-nav="about">About</a>
+      </nav>
+      <div class="nav-tools">
+        <div class="lang">
+          <button class="lang-btn" aria-label="Change language">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" stroke-linecap="round"/></svg>
+            <span id="lang-current">EN</span>
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="lang-menu" role="menu">
+            <button data-lang="en" class="active" onclick="miSetLang('en','EN')"><span class="flag">🇬🇧</span> English <span class="native">English</span></button>
+            <button data-lang="fr" onclick="miSetLang('fr','FR')"><span class="flag">🇫🇷</span> French <span class="native">Français</span></button>
+            <button data-lang="rw" onclick="miSetLang('rw','RW')"><span class="flag">🇷🇼</span> Kinyarwanda <span class="native">Ikinyarwanda</span></button>
+            <button data-lang="sw" onclick="miSetLang('sw','SW')"><span class="flag">🇹🇿</span> Kiswahili <span class="native">Kiswahili</span></button>
+            <button data-lang="am" onclick="miSetLang('am','AM')"><span class="flag">🇪🇹</span> Amharic <span class="native">አማርኛ</span></button>
+          </div>
         </div>
+        <a class="btn btn-primary btn-sm nav-cta" href="contact.html">Start a Project</a>
+        <button class="nav-toggle" aria-label="Open menu"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/></svg></button>
       </div>
     </div>
+    <div class="mobile-menu wrap">
+      <a href="products.html">Products</a>
+      <a href="ai-workflows.html">AI Workflows</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="insights.html">Insights</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Start a Project</a>
+    </div>
+    <div id="google_translate_element"></div>
   </header>
-   ====== Header End ====== -->
 
-  <!-- ====== Hero Start ====== -->
-  <section class="ud-hero" id="home">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
+<main>
 
-            <h1 class="ud-hero-title">
-              Advanced Infrastructure for Data, Industry, and Institutional Systems.
-            </h1>
-            <p class="ud-hero-desc">
-              Empowering organizations with custom software suites, scalable data pipelines,
-              and strategic technology consulting to streamline complex operations and drive global impact.
-            </p>
-
-            <ul class="ud-hero-buttons">
-              <li>
-                <a href="about.html" class="ud-main-btn ud-white-btn">
-                  Why Mimperio?
-                </a>
-              </li>
-              <li>
-                <a href="index.html#pricing"  class="ud-main-btn ud-link-btn">
-                  Discover Our Solutions <i class="lni lni-arrow-right"></i>
-                </a>
-              </li>
-            </ul>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow reveal">mimperio.tech · Technology company</span>
+          <h1 class="reveal d1">Data, AI and software that turn <span class="grad">hard problems</span> into working systems</h1>
+          <p class="lead reveal d2">Mimperio designs and ships production platforms, applied AI workflows, and custom software for governments, research institutions, and growing enterprises. We build what the data actually supports, with provenance and privacy by default.</p>
+          <div class="hero-actions reveal d3">
+            <a class="btn btn-primary" href="products.html">Explore the platform</a>
+            <a class="btn btn-ghost" href="contact.html">Book a scoping call &rarr;</a>
           </div>
-          <!--
-          <div
-            class="ud-hero-brands-wrapper wow fadeInUp"
-            data-wow-delay=".3s"
-          >
-            <img src="assets/images/hero/brand.svg" alt="brand" />
-          </div>
-          <div class="ud-hero-image wow fadeInUp" data-wow-delay=".25s">
-            <img src="assets/images/hero/hero-image.svg" alt="hero-image" />
-            <img
-              src="assets/images/hero/dotted-shape.svg"
-              alt="shape"
-              class="shape shape-1"
-            />
-            <img
-              src="assets/images/hero/dotted-shape.svg"
-              alt="shape"
-              class="shape shape-2"
-            />
-          </div>
-          -->
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ====== Hero End ====== -->
-
-  <!-- ====== Features Start ====== -->
-  <section id="features" class="ud-features">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="ud-section-title">
-            <span>Our Mission</span>
-            <h2>Transforming Data into Impact with Innovative Tools</h2>
-            <p>
-              At Mimperio, our suite of custom tools integrates robust data cleaning,
-              enhanced analytics, and offline-first designs. We empower consulting businesses
-              and impact evaluations while minimizing overhead and environmental footprint.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-3 col-lg-3 col-sm-6">
-          <div class="ud-single-feature wow fadeInUp" data-wow-delay=".1s">
-            <div class="ud-feature-icon">
-              <i class="lni lni-gift"></i>
-            </div>
-            <div class="ud-feature-content">
-              <h3 class="ud-feature-title">Ground‑Level Data Integration</h3>
-              <p class="ud-feature-desc">
-                We streamline diverse datasets with custom CLIs for seamless integration, cleaning, harmonization, and analysis.
-              </p>
-              <!--
-              <a href="javascript:void(0)" class="ud-feature-link">
-                Discover More
-              </a>
-              -->
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-sm-6">
-          <div class="ud-single-feature wow fadeInUp" data-wow-delay=".15s">
-            <div class="ud-feature-icon">
-              <i class="lni lni-move"></i>
-            </div>
-            <div class="ud-feature-content">
-              <h3 class="ud-feature-title">AI‑Empowered Analytics</h3>
-              <p class="ud-feature-desc">
-                We leverage on‑device AI and ML algorithms to turn raw data into actionable insights in real time.
-              </p>
-              <!--
-              <a href="javascript:void(0)" class="ud-feature-link">
-                Discover More
-              </a>
-              -->
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-sm-6">
-          <div class="ud-single-feature wow fadeInUp" data-wow-delay=".2s">
-            <div class="ud-feature-icon">
-              <i class="lni lni-layout"></i>
-            </div>
-            <div class="ud-feature-content">
-              <h3 class="ud-feature-title">Sustainable &amp; Green Compute</h3>
-              <p class="ud-feature-desc">
-                We minimize environmental impact with offline‑first, zero‑capex shipping and efficient local computing.
-              </p>
-              <!--
-              <a href="javascript:void(0)" class="ud-feature-link">
-                Discover More
-              </a>
-              -->
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-sm-6">
-          <div class="ud-single-feature wow fadeInUp" data-wow-delay=".25s">
-            <div class="ud-feature-icon">
-              <i class="lni lni-layers"></i>
-            </div>
-            <div class="ud-feature-content">
-              <h3 class="ud-feature-title">Tailored Impact Evaluations</h3>
-              <p class="ud-feature-desc">
-                We deploy frameworks that quantify local impact and drive decision‑making for NGOs and governments.
-              </p>
-              <!--
-              <a href="javascript:void(0)" class="ud-feature-link">
-                Discover More
-              </a>
-              -->
-            </div>
+          <div class="hero-meta reveal d4">
+            <div class="hm"><b><span data-to="23">0</span></b><span>Products shipped</span></div>
+            <div class="hm"><b><span data-to="5">0</span></b><span>Divisions</span></div>
+            <div class="hm"><b><span data-to="4">0</span></b><span>Languages</span></div>
           </div>
         </div>
 
-        <div class="col-xl-3 col-lg-3 col-sm-6">
-          <div class="ud-single-feature wow fadeInUp" data-wow-delay=".3s">
-            <div class="ud-feature-icon">
-              <i class="lni lni-laptop-phone"></i>
-            </div>
-            <div class="ud-feature-content">
-              <h3 class="ud-feature-title">Custom Ecosystem Suites</h3>
-              <p class="ud-feature-desc">
-                We build custom industrial and educational software designed to streamline internal operations and unify organizational workflows.
-              </p>
-              </div>
+        <div class="panel reveal d2">
+          <div class="panel-bar">
+            <span class="dots"><i style="background:#ef4444"></i><i style="background:#eab308"></i><i style="background:#34d3a6"></i></span>
+            <span class="mono mute" style="font-size:.72rem;">mimperio · platform.live</span>
           </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- ====== Features End ====== -->
-
-  <!-- ====== About Start ====== -->
-  <section id="about" class="ud-about">
-    <div class="container">
-      <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
-        <div class="ud-about-content-wrapper">
-          <div class="ud-about-content">
-            <span class="tag">About Mimperio</span>
-            <h2>Empowering Development Economics with Innovative Data Solutions</h2>
-            <p>
-              Mimperio transforms raw, grassroots data into strategic insights using custom CLIs, on‑device AI, and automated impact evaluation tools. Our solutions are crafted to support NGOs, governments, and consulting firms in driving measurable local change.
-            </p>
-            <p>
-              We combine advanced analytics with environmentally sustainable practices to deliver a platform that is as efficient as it is forward-thinking.
-            </p>
-            <!--
-            <a href="javascript:void(0)" class="ud-main-btn">Discover Our Approach</a>
-            -->
-          </div>
-        </div>
-        <div class="ud-about-image">
-          <img src="assets/images/about/about-image.svg" alt="about-image" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ====== About End ====== -->
-
-  <!-- ====== Pricing (Solutions) Start ====== -->
-  <!--<section id="pricing" class="ud-pricing">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="ud-section-title mx-auto text-center">
-            <span>Service Packages</span>
-            <h2>Our Consulting &amp; Solution Packages</h2>
-            <p>
-              Every package is tailored to deliver high‑value insights and scalable data solutions,
-              empowering organizations to transform development economics challenges into impactful outcomes.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row g-0 align-items-center justify-content-center">
-        <div class="col-lg-4 col-md-6 col-sm-10">
-          <div class="ud-single-pricing first-item wow fadeInUp" data-wow-delay=".15s">
-            <div class="ud-pricing-header">
-              <h3>OPEN SOURCE PACKAGE</h3>
-              <h4>For Academics, Students & Researchers</h4>
-            </div>
-            <div class="ud-pricing-body">
-              <ul>
-                <li>Data Integration CLI</li>
-                <li>Automated Cleaning &amp; Harmonization</li>
-                <li>Initial Impact Analysis</li>
-                <li>Documentation & Community Support</li>
-                <li>Ideal for academic research & field experiments</li>
-              </ul>
-            </div>
-            <div class="ud-pricing-footer">
-              <a href="javascript:void(0)" class="ud-main-btn ud-border-btn">
-                Coming Soon
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-10">
-          <div class="ud-single-pricing active wow fadeInUp" data-wow-delay=".1s">
-            <span class="ud-popular-tag">POPULAR</span>
-            <div class="ud-pricing-header">
-              <h3>STANDARD BUSINESS PACKAGE</h3>
-              <h4></h4>
-            </div>
-            <div class="ud-pricing-body">
-              <ul>
-                <li>Advanced AI‑Driven Toolset</li>
-                <li>Comprehensive Data Integration</li>
-                <li>Impact Evaluation Dashboard</li>
-                <li>6 Months Support</li>
-                <li>Survey & harmonization tools</li>
-                <li>Perfect for Medium‑Scale commercial Projects</li>
-              </ul>
-            </div>
-            <div class="ud-pricing-footer">
-              <a href="javascript:void(0)" class="ud-main-btn ud-white-btn">
-                Coming Soon
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-10">
-          <div class="ud-single-pricing last-item wow fadeInUp" data-wow-delay=".15s">
-            <div class="ud-pricing-header">
-              <h3>ENTERPRISE PACKAGE</h3>
-              <h4></h4>
-            </div>
-            <div class="ud-pricing-body">
-              <ul>
-                <li>Full Suite of Mimperio Solutions</li>
-                <li>Custom CLIs and Survey Tools</li>
-                <li>Dedicated Analytics Consultancy</li>
-                <li>SLA-based long-term support</li>
-                <li>Designed for Large‑Scale Engagements</li>
-              </ul>
-            </div>
-            <div class="ud-pricing-footer">
-              <a href="javascript:void(0)" class="ud-main-btn ud-border-btn">
-                Coming Soon
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>-->
-      <section id="pricing" class="ud-pricing">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="ud-section-title mx-auto text-center">
-                <span>Mimperio Solutions Portfolio</span>
-                <h2>Advanced Technology & Intelligence Systems</h2>
-                <p>
-                  Mimperio provides specialized platforms and strategic advisory that enable governments,
-                  enterprises, and institutions to transform complex challenges into strategic insights.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row g-0 align-items-center justify-content-center">
-            <div class="col-lg-4 col-md-6 col-sm-10">
-              <div class="ud-single-pricing first-item wow fadeInUp" data-wow-delay=".15s">
-                <div class="ud-pricing-header">
-                  <h3>DATA SOLUTIONS</h3>
-                  <h4>Infrastructure, Analytics & Intelligence</h4>
-                </div>
-                <div class="ud-pricing-body">
-                  <ul>
-                    <li>GeoInsight Intelligence Platform</li>
-                    <li>Socioeconomic Data Intelligence Suite</li>
-                    <li>Alternative Data Analytics (Satellite/Telecom)</li>
-                    <li>Custom Data Infrastructure & Lakes</li>
-                    <li>Machine Learning & Governance Frameworks</li>
-                  </ul>
-                </div>
-                <div class="ud-pricing-footer">
-                  <a href="javascript:void(0)" class="ud-main-btn ud-border-btn">
-                    Waitlist
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-10">
-              <div class="ud-single-pricing active wow fadeInUp" data-wow-delay=".1s">
-                <div class="ud-pricing-header">
-                  <h3>SOFTWARE SOLUTIONS</h3>
-                  <h4>Industrial, Institutional & Operational</h4>
-                </div>
-                <div class="ud-pricing-body">
-                  <ul>
-                    <li>Industrial Automation & Robotics Systems</li>
-                    <li>Healthcare Operations & Clinic Management</li>
-                    <li>Education Technology & LMS Platforms</li>
-                    <li>NGO & Institutional Management Systems</li>
-                    <li>Real-time Dashboards & Predictive Tools</li>
-                  </ul>
-                </div>
-                <div class="ud-pricing-footer">
-                  <a href="javascript:void(0)" class="ud-main-btn ud-white-btn">
-                    Explore Software Products
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-10">
-              <div class="ud-single-pricing last-item wow fadeInUp" data-wow-delay=".15s">
-                <div class="ud-pricing-header">
-                  <h3>TECHNOLOGY CONSULTING</h3>
-                  <h4>Strategic Advisory for Advanced Systems</h4>
-                </div>
-                <div class="ud-pricing-body">
-                  <ul>
-                    <li>Enterprise Technology Architecture</li>
-                    <li>Industrial Systems Engineering Consulting</li>
-                    <li>Data Strategy & AI Advisory</li>
-                    <li>Digital Transformation Programs</li>
-                    <li>Scalable Infrastructure Design</li>
-                  </ul>
-                </div>
-                <div class="ud-pricing-footer">
-                  <a href="javascript:void(0)" class="ud-main-btn ud-border-btn">
-                    Waitlist
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-  <!-- ====== Pricing (Solutions) End ====== -->
-
-  <!-- ====== FAQ Start ====== -->
-  <!--<section id="faq" class="ud-faq">
-    <div class="shape">
-      <img src="assets/images/faq/shape.svg" alt="shape" />
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="ud-section-title text-center mx-auto">
-            <span>FAQ</span>
-            <h2>Questions Answered</h2>
-            <p>
-              We’ve compiled answers to some of the most common questions about Mimperio’s consulting services and innovative tools.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
-            <div class="accordion">
-              <button
-                class="ud-faq-btn collapsed"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-              >
-                <span class="icon flex-shrink-0">
-                  <i class="lni lni-chevron-down"></i>
-                </span>
-                <span>What is Mimperio?</span>
-              </button>
-              <div id="collapseOne" class="accordion-collapse collapse">
-                <div class="ud-faq-body">
-                  Mimperio is a tech firm specializing in transforming ground-level data into strategic insights. We develop custom tools that integrate advanced analytics, AI, and sustainable practices for development economics.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".15s">
-            <div class="accordion">
-              <button
-                class="ud-faq-btn collapsed"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-              >
-                <span class="icon flex-shrink-0">
-                  <i class="lni lni-chevron-down"></i>
-                </span>
-                <span>How does Mimperio integrate technology into consulting?</span>
-              </button>
-              <div id="collapseTwo" class="accordion-collapse collapse">
-                <div class="ud-faq-body">
-                  Our solutions combine custom CLIs with on-device AI, offline-first designs, and green compute to deliver rapid, actionable insights while ensuring minimal environmental impact.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
-            <div class="accordion">
-              <button
-                class="ud-faq-btn collapsed"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-              >
-                <span class="icon flex-shrink-0">
-                  <i class="lni lni-chevron-down"></i>
-                </span>
-                <span>Are your solutions scalable?</span>
-              </button>
-              <div id="collapseThree" class="accordion-collapse collapse">
-                <div class="ud-faq-body">
-                  Yes. Each tool is engineered for scalability, from pilot projects to large-scale implementations, ensuring our solutions grow with your organization.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
-            <div class="accordion">
-              <button
-                class="ud-faq-btn collapsed"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-              >
-                <span class="icon flex-shrink-0">
-                  <i class="lni lni-chevron-down"></i>
-                </span>
-                <span>Do you offer pilot projects for new clients?</span>
-              </button>
-              <div id="collapseFour" class="accordion-collapse collapse">
-                <div class="ud-faq-body">
-                  Absolutely. We design tailored pilot projects to demonstrate the impact and efficiency of our tools before a full‑scale deployment.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".15s">
-            <div class="accordion">
-              <button
-                class="ud-faq-btn collapsed"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFive"
-              >
-                <span class="icon flex-shrink-0">
-                  <i class="lni lni-chevron-down"></i>
-                </span>
-                <span>Which sectors benefit from your services?</span>
-              </button>
-              <div id="collapseFive" class="accordion-collapse collapse">
-                <div class="ud-faq-body">
-                  Our solutions are widely applicable in public health, education, agriculture, disaster management, urban planning, and more.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
-            <div class="accordion">
-              <button
-                class="ud-faq-btn collapsed"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseSix"
-              >
-                <span class="icon flex-shrink-0">
-                  <i class="lni lni-chevron-down"></i>
-                </span>
-                <span>How do you ensure data security and privacy?</span>
-              </button>
-              <div id="collapseSix" class="accordion-collapse collapse">
-                <div class="ud-faq-body">
-                  We adhere to strict data protection protocols and leverage local compute solutions, ensuring that your sensitive data remains secure and confidential.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-      <section id="faq" class="ud-faq">
-        <div class="shape">
-          <img src="assets/images/faq/shape.svg" alt="shape" />
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="ud-section-title text-center mx-auto">
-                <span>FAQ</span>
-                <h2>Questions Answered</h2>
-                <p>
-                  Learn more about how Mimperio’s data intelligence, custom software, and strategic consulting drive organizational transformation.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
-                <div class="accordion">
-                  <button
-                    class="ud-faq-btn collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                  >
-                    <span class="icon flex-shrink-0">
-                      <i class="lni lni-chevron-down"></i>
-                    </span>
-                    <span>What types of data can Mimperio analyze?</span>
-                  </button>
-                  <div id="collapseOne" class="accordion-collapse collapse">
-                    <div class="ud-faq-body">
-                      We specialize in "alternative data," including satellite imagery, telecommunications metadata, and geospatial activity. We are experts at generating insights in environments where traditional data is fragmented or unavailable.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="ud-single-faq wow fadeInUp" data-wow-delay=".15s">
-                <div class="accordion">
-                  <button
-                    class="ud-faq-btn collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                  >
-                    <span class="icon flex-shrink-0">
-                      <i class="lni lni-chevron-down"></i>
-                    </span>
-                    <span>Can your software integrate with our existing systems?</span>
-                  </button>
-                  <div id="collapseTwo" class="accordion-collapse collapse">
-                    <div class="ud-faq-body">
-                      Yes. Our Industrial and Institutional software suites are designed for seamless data integration, allowing you to bridge the gap between legacy hardware and modern digital automation.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
-                <div class="accordion">
-                  <button
-                    class="ud-faq-btn collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                  >
-                    <span class="icon flex-shrink-0">
-                      <i class="lni lni-chevron-down"></i>
-                    </span>
-                    <span>Who uses the GeoInsight Intelligence Platform?</span>
-                  </button>
-                  <div id="collapseThree" class="accordion-collapse collapse">
-                    <div class="ud-faq-body">
-                      GeoInsight is primarily used by governments for economic monitoring, enterprises for market intelligence in emerging markets, and research institutions for infrastructure planning.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
-                <div class="accordion">
-                  <button
-                    class="ud-faq-btn collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                  >
-                    <span class="icon flex-shrink-0">
-                      <i class="lni lni-chevron-down"></i>
-                    </span>
-                    <span>Does Mimperio offer long-term tech strategy?</span>
-                  </button>
-                  <div id="collapseFour" class="accordion-collapse collapse">
-                    <div class="ud-faq-body">
-                      Through our Technology Consulting arm, we provide strategic advisory on Enterprise Architecture, AI strategy, and end-to-end digital transformation programs for large-scale organizations.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="ud-single-faq wow fadeInUp" data-wow-delay=".15s">
-                <div class="accordion">
-                  <button
-                    class="ud-faq-btn collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                  >
-                    <span class="icon flex-shrink-0">
-                      <i class="lni lni-chevron-down"></i>
-                    </span>
-                    <span>Are your software solutions sector-specific?</span>
-                  </button>
-                  <div id="collapseFive" class="accordion-collapse collapse">
-                    <div class="ud-faq-body">
-                      We provide specialized modules for Healthcare (clinic management), Industrial Automation (robotics/manufacturing), and Education (LMS and research collaboration tools).
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
-                <div class="accordion">
-                  <button
-                    class="ud-faq-btn collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSix"
-                  >
-                    <span class="icon flex-shrink-0">
-                      <i class="lni lni-chevron-down"></i>
-                    </span>
-                    <span>How do you handle data governance and security?</span>
-                  </button>
-                  <div id="collapseSix" class="accordion-collapse collapse">
-                    <div class="ud-faq-body">
-                      Security is central to our custom data infrastructure. We deploy advanced governance frameworks and secure data lakes that comply with institutional and international data protection standards.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-  <!-- ====== FAQ End ====== -->
-
-  <!-- ====== Testimonials Start ====== -->
-  <!--<section id="testimonials" class="ud-testimonials">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="ud-section-title mx-auto text-center">
-            <span>Testimonials</span>
-            <h2>What Our Clients Say</h2>
-            <p>
-              Hear from organizations and consulting experts who have transformed their impact with Mimperio’s innovative solutions.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="ud-single-testimonial wow fadeInUp" data-wow-delay=".1s">
-            <div class="ud-testimonial-ratings">
-              <i class="lni lni-star-filled"></i>
-              <i class="lni lni-star-filled"></i>
-              <i class="lni lni-star-filled"></i>
-              <i class="lni lni-star-filled"></i>
-              <i class="lni lni-star-filled"></i>
-            </div>
-            <div class="ud-testimonial-content">
-              <p>
-                "Mimperio revolutionized our data collection process. Their innovative tools and sustainable approach enabled us to drive real change in our community projects."
-              </p>
-            </div>
-            <div class="ud-testimonial-info">
-              <div class="ud-testimonial-image">
-                <img src="assets/images/testimonials/author-01.png" alt="author" />
-              </div>
-              <div class="ud-testimonial-meta">
-                <h4>Dr. Samuel Iyer</h4>
-                <p>Development Advisor</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="ud-single-testimonial wow fadeInUp" data-wow-delay=".15s">
-            <div class="ud-testimonial-ratings">
-              <i class="lni lni-star-filled"></i>
-              <i class="lni lni-star-filled"></i>
-              <i class="lni lni-star-filled"></i>
-              <i class="lni lni-star-filled"></i>
-              <i class="lni lni-star-filled"></i>
-            </div>
-            <div class="ud-testimonial-content">
-              <p>
-                "Thanks to Mimperio, our survey operations became more efficient and sustainable. Their custom CLI tools are a game-changer for development projects."
-              </p>
-            </div>
-            <div class="ud-testimonial-info">
-              <div class="ud-testimonial-image">
-                <img src="assets/images/testimonials/author-02.png" alt="author" />
-              </div>
-              <div class="ud-testimonial-meta">
-                <h4>Rina Desai</h4>
-                <p>NGO Director</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="ud-single-testimonial wow fadeInUp" data-wow-delay=".2s">
-            <div class="ud-testimonial-ratings">
-              <i class="lni lni-star-filled"></i>
-              <i class="lni lni-star-filled"></i>
-              <i class="lni lni-star-filled"></i>
-              <i class="lni lni-star-filled"></i>
-              <i class="lni lni-star-filled"></i>
-            </div>
-            <div class="ud-testimonial-content">
-              <p>
-                "The integration of on‑device AI and green computing at Mimperio has provided us with reliable and eco‑friendly insights, perfectly aligned with our regional challenges."
-              </p>
-            </div>
-            <div class="ud-testimonial-info">
-              <div class="ud-testimonial-image">
-                <img src="assets/images/testimonials/author-03.png" alt="author" />
-              </div>
-              <div class="ud-testimonial-meta">
-                <h4>Karan Mehta</h4>
-                <p>Urban Development Consultant</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="ud-brands wow fadeInUp" data-wow-delay=".2s">
-            <div class="ud-title">
-              <h6>Trusted and Used by</h6>
-            </div>
-            <div class="ud-brands-logo">
-              <div class="ud-single-logo">
-                <img src="assets/images/brands/ayroui.svg" alt="ayroui" />
-              </div>
-              <div class="ud-single-logo">
-                <img src="assets/images/brands/uideck.svg" alt="uideck" />
-              </div>
-              <div class="ud-single-logo">
-                <img src="assets/images/brands/graygrids.svg" alt="graygrids" />
-              </div>
-              <div class="ud-single-logo">
-                <img src="assets/images/brands/lineicons.svg" alt="lineicons" />
-              </div>
-              <div class="ud-single-logo">
-                <img src="assets/images/brands/ecommerce-html.svg" alt="ecommerce-html" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-      <section id="testimonials" class="ud-testimonials">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="ud-section-title mx-auto text-center">
-                <span>Testimonials</span>
-                <h2>Voices of Impact</h2>
-                <p>
-                  Hear from the leaders and organizations leveraging Mimperio’s advanced data systems and industrial software suites to drive global innovation.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="ud-single-testimonial wow fadeInUp" data-wow-delay=".1s">
-                <div class="ud-testimonial-ratings">
-                  <i class="lni lni-star-filled"></i>
-                  <i class="lni lni-star-filled"></i>
-                  <i class="lni lni-star-filled"></i>
-                  <i class="lni lni-star-filled"></i>
-                  <i class="lni lni-star-filled"></i>
-                </div>
-                <div class="ud-testimonial-content">
-                  <p>
-                    "The GeoInsight platform provided us with socioeconomic indicators that traditional surveys simply couldn't capture. Their data infrastructure is essential for emerging market research."
-                  </p>
-                </div>
-                <div class="ud-testimonial-info">
-                  <div class="ud-testimonial-image">
-                    <img src="assets/images/testimonials/author-01.png" alt="author" />
-                  </div>
-                  <div class="ud-testimonial-meta">
-                    <h4>Dr. Samuel Iyer</h4>
-                    <p>Economic Research Lead</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="ud-single-testimonial wow fadeInUp" data-wow-delay=".15s">
-                <div class="ud-testimonial-ratings">
-                  <i class="lni lni-star-filled"></i>
-                  <i class="lni lni-star-filled"></i>
-                  <i class="lni lni-star-filled"></i>
-                  <i class="lni lni-star-filled"></i>
-                  <i class="lni lni-star-filled"></i>
-                </div>
-                <div class="ud-testimonial-content">
-                  <p>
-                    "Mimperio’s industrial automation software unified our manufacturing workflow. Their ability to integrate robotics with real-time data dashboards has drastically improved our efficiency."
-                  </p>
-                </div>
-                <div class="ud-testimonial-info">
-                  <div class="ud-testimonial-image">
-                    <img src="assets/images/testimonials/author-02.png" alt="author" />
-                  </div>
-                  <div class="ud-testimonial-meta">
-                    <h4>Rina Desai</h4>
-                    <p>Operations Director</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="ud-single-testimonial wow fadeInUp" data-wow-delay=".2s">
-                <div class="ud-testimonial-ratings">
-                  <i class="lni lni-star-filled"></i>
-                  <i class="lni lni-star-filled"></i>
-                  <i class="lni lni-star-filled"></i>
-                  <i class="lni lni-star-filled"></i>
-                  <i class="lni lni-star-filled"></i>
-                </div>
-                <div class="ud-testimonial-content">
-                  <p>
-                    "Their technology consulting was pivotal during our digital transformation. They didn't just give us a strategy; they designed a scalable AI architecture that fits our long-term goals."
-                  </p>
-                </div>
-                <div class="ud-testimonial-info">
-                  <div class="ud-testimonial-image">
-                    <img src="assets/images/testimonials/author-03.png" alt="author" />
-                  </div>
-                  <div class="ud-testimonial-meta">
-                    <h4>Karan Mehta</h4>
-                    <p>Chief Technology Officer</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-  <!-- ====== Testimonials End ====== -->
-
-  <!-- ====== Team Start ======
-  <section id="team" class="ud-team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="ud-section-title mx-auto text-center">
-            <span>Our Team</span>
-            <h2>Meet the Mimperio Experts</h2>
-            <p>
-              Our diverse team of data scientists, developers, and economic consultants unite under a single vision—to revolutionize development economics with sustainable insights.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-3 col-lg-3 col-sm-6">
-          <div class="ud-single-team wow fadeInUp" data-wow-delay=".1s">
-            <div class="ud-team-image-wrapper">
-              <div class="ud-team-image">
-                <img src="assets/images/team/team-01.png" alt="team" />
-              </div>
-              <img src="assets/images/team/dotted-shape.svg" alt="shape" class="shape shape-1" />
-              <img src="assets/images/team/shape-2.svg" alt="shape" class="shape shape-2" />
-            </div>
-            <div class="ud-team-info">
-              <h5>Aisha Patel</h5>
-              <h6>Chief Data Scientist</h6>
-            </div>
-            <ul class="ud-team-socials">
-              <li>
-                <a href="https://twitter.com/MusharofChy">
-                  <i class="lni lni-facebook-filled"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/MusharofChy">
-                  <i class="lni lni-twitter-filled"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/MusharofChy">
-                  <i class="lni lni-instagram-filled"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-sm-6">
-          <div class="ud-single-team wow fadeInUp" data-wow-delay=".15s">
-            <div class="ud-team-image-wrapper">
-              <div class="ud-team-image">
-                <img src="assets/images/team/team-02.png" alt="team" />
-              </div>
-              <img src="assets/images/team/dotted-shape.svg" alt="shape" class="shape shape-1" />
-              <img src="assets/images/team/shape-2.svg" alt="shape" class="shape shape-2" />
-            </div>
-            <div class="ud-team-info">
-              <h5>Rahul Verma</h5>
-              <h6>Lead Developer</h6>
-            </div>
-            <ul class="ud-team-socials">
-              <li>
-                <a href="https://twitter.com/MusharofChy">
-                  <i class="lni lni-facebook-filled"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/MusharofChy">
-                  <i class="lni lni-twitter-filled"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/MusharofChy">
-                  <i class="lni lni-instagram-filled"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-sm-6">
-          <div class="ud-single-team wow fadeInUp" data-wow-delay=".2s">
-            <div class="ud-team-image-wrapper">
-              <div class="ud-team-image">
-                <img src="assets/images/team/team-03.png" alt="team" />
-              </div>
-              <img src="assets/images/team/dotted-shape.svg" alt="shape" class="shape shape-1" />
-              <img src="assets/images/team/shape-2.svg" alt="shape" class="shape shape-2" />
-            </div>
-            <div class="ud-team-info">
-              <h5>Sunita Reddy</h5>
-              <h6>Economic Consultant</h6>
-            </div>
-            <ul class="ud-team-socials">
-              <li>
-                <a href="https://twitter.com/MusharofChy">
-                  <i class="lni lni-facebook-filled"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/MusharofChy">
-                  <i class="lni lni-twitter-filled"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/MusharofChy">
-                  <i class="lni lni-instagram-filled"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-sm-6">
-          <div class="ud-single-team wow fadeInUp" data-wow-delay=".25s">
-            <div class="ud-team-image-wrapper">
-              <div class="ud-team-image">
-                <img src="assets/images/team/team-04.png" alt="team" />
-              </div>
-              <img src="assets/images/team/dotted-shape.svg" alt="shape" class="shape shape-1" />
-              <img src="assets/images/team/shape-2.svg" alt="shape" class="shape shape-2" />
-            </div>
-            <div class="ud-team-info">
-              <h5>Karan Sharma</h5>
-              <h6>Project Manager</h6>
-            </div>
-            <ul class="ud-team-socials">
-              <li>
-                <a href="https://twitter.com/MusharofChy">
-                  <i class="lni lni-facebook-filled"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/MusharofChy">
-                  <i class="lni lni-twitter-filled"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/MusharofChy">
-                  <i class="lni lni-instagram-filled"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-   ====== Team End ====== -->
-
-    <!-- ====== Contact Start ====== -->
-    <section id="contact" class="ud-contact">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-8 col-lg-7">
-            <div class="ud-contact-content-wrapper">
-              <div class="ud-contact-title">
-                <span>CONTACT US</span>
-                <h2>
-                  Let’s Find the Right Solution for Your Organization
-                </h2>
-              </div>
-              <div class="ud-contact-info-wrapper">
-                <div class="ud-single-info">
-                  <div class="ud-info-icon">
-                    <i class="lni lni-map-marker"></i>
-                  </div>
-                  <div class="ud-info-meta">
-                    <h5>Our Locations</h5>
-                    <p>Kigali, Rwanda</p>
-                    <p>New Delhi, India</p>
-                  </div>
-                </div>
-                <div class="ud-single-info">
-                  <div class="ud-info-icon">
-                    <i class="lni lni-envelope"></i>
-                  </div>
-                 <div class="ud-info-meta">
-                  <h5>How Can We Help?</h5>
-                  <p>
-                    <strong>Partnerships & Business:</strong>
-                    <a href="mailto:info@mimperio.tech">info@mimperio.tech</a>
-                  </p>
-                  <p>
-                    <strong>Client Support:</strong>
-                    <a href="mailto:contact@mimperio.tech">contact@mimperio.tech</a>
-                  </p>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-5">
-            <div class="ud-contact-form-wrapper wow fadeInUp" data-wow-delay=".2s">
-              <h3 class="ud-contact-form-title">Send Us a Message</h3>
-
-              <!-- Updated Form for Email Submission -->
-              <form class="ud-contact-form" action="https://formsubmit.co/info@mimperio.tech" method="POST">
-                <div class="ud-form-group">
-                  <label for="fullName">Full Name*</label>
-                  <input type="text" name="fullName" placeholder="Enter your full name" required />
-                </div>
-                <div class="ud-form-group">
-                  <label for="email">Email*</label>
-                  <input type="email" name="email" placeholder="example@mimperio.tech" required />
-                </div>
-                <div class="ud-form-group">
-                  <label for="phone">Phone*</label>
-                  <input type="text" name="phone" placeholder="example: +250 780000000" required />
-                </div>
-                <div class="ud-form-group">
-                  <label for="message">Message*</label>
-                  <textarea name="message" rows="1" placeholder="Type your message here" required></textarea>
-                </div>
-
-                <!-- Hidden Fields for Email Handling -->
-                <input type="hidden" name="_subject" value="New Contact Request">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://mimperio.tech/thankyou.html">
-
-                <div class="ud-form-group mb-0">
-                  <button type="submit" class="ud-main-btn">
-                    Send Message
-                  </button>
-                </div>
-              </form>
-
+          <div class="panel-body">
+            <div class="c">[SYSTEM] Mimperio node cluster loaded.</div>
+            <div class="mute">› target: <span style="color:#fff">mimperio.tech</span></div>
+            <div class="mute">› ingestion: <span class="e">active</span> · latency <span class="c">1.8ms</span></div>
+            <div id="term-log" style="margin-top:6px;padding-top:8px;border-top:1px solid var(--line-soft);"></div>
+            <div class="term-actions">
+              <button id="term-run" class="term-btn">Run telemetry test</button>
+              <span class="live-dot"><i></i> Live node</span>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ====== Contact End ====== -->
 
+    <!-- COUNTERS -->
+    <section class="ribbon">
+      <div class="wrap ribbon-grid">
+        <div class="stat reveal"><div class="n cy"><span data-to="6">0</span></div><div class="l">Flagship platforms</div></div>
+        <div class="stat reveal d1"><div class="n em"><span data-to="6">0</span></div><div class="l">Applied AI workflows</div></div>
+        <div class="stat reveal d2"><div class="n cy"><span data-to="100" data-suffix="%">0</span></div><div class="l">Documented data lineage</div></div>
+        <div class="stat reveal d3"><div class="n em"><span data-to="3">0</span></div><div class="l">Delivery models</div></div>
+      </div>
+    </section>
 
-  <div id="footer-placeholder"></div>
-  <!-- ====== Footer Start ======
-  <footer class="ud-footer wow fadeInUp" data-wow-delay=".25s">
-    <div class="shape shape-1">
-      <img src="assets/images/footer/shape-1.svg" alt="shape" />
+    <!-- TECH MARQUEE -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>TypeScript</span><span>Python · ML</span><span>Go / Rust</span><span>ClickHouse</span><span>Snowflake</span><span>dbt</span><span>PostgreSQL</span><span>Apache Kafka</span><span>Kubernetes</span><span>Terraform</span><span>Next.js</span><span>Differential Privacy</span>
+        <span>TypeScript</span><span>Python · ML</span><span>Go / Rust</span><span>ClickHouse</span><span>Snowflake</span><span>dbt</span><span>PostgreSQL</span><span>Apache Kafka</span><span>Kubernetes</span><span>Terraform</span><span>Next.js</span><span>Differential Privacy</span>
+      </div>
     </div>
-    <div class="shape shape-2">
-      <img src="assets/images/footer/shape-2.svg" alt="shape" />
-    </div>
-    <div class="shape shape-3">
-      <img src="assets/images/footer/shape-3.svg" alt="shape" />
-    </div>
-    <div class="ud-footer-widgets">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="ud-widget">
-              <a href="index.html" class="ud-footer-logo">
-                <img src="assets/images/logo/logo.svg" alt="logo" />
-              </a>
-              <p class="ud-widget-desc">
-                Mimperio redefines development consulting by merging advanced data insights with sustainable technology.
-              </p>
-              <ul class="ud-widget-socials">
-                <li>
-                  <a href="https://www.facebook.com/Melius-Imperio">
-                    <i class="lni lni-facebook-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://x.com/MeliusImperio">
-                    <i class="lni lni-twitter-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/meliusimperio/">
-                    <i class="lni lni-instagram-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/company/melius-imperio/">
-                    <i class="lni lni-linkedin-original"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/Melius-Imperio-LLC">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </li>
 
-              </ul>
-            </div>
+    <!-- DIVISIONS -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">How we are organised</span>
+          <h2>One company, five divisions</h2>
+          <p class="lead">Rather than a single service line, Mimperio runs as divisions that share engineering, a data provenance framework, and a privacy standard. Each serves a different need and time horizon.</p>
+        </div>
+        <div class="reveal">
+          <div class="division">
+            <div><div class="idx">DIV 01</div></div>
+            <div><h3>Platforms</h3><p class="dim">Flagship SaaS for socio-economic intelligence, forecasting, and coordinated delivery. For institutions that need continuous insight, not one-off reports.</p><div class="meta">GeoInsight · Foresight AI · PolicyFlow · DataGuard · PolicyLab · ModelForge</div></div>
           </div>
-          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-            <div class="ud-widget">
-              <h5 class="ud-widget-title">About Us</h5>
-              <ul class="ud-widget-links">
-                <li class="nav-item">
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="#features">Our Tools</a>
-                </li>
-                <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="https://github.com/Melius-Imperio-LLC">Open Source</a>
-                </li>
+          <div class="division">
+            <div><div class="idx">DIV 02</div></div>
+            <div><h3>Applied AI Workflows</h3><p class="dim">Task-focused AI that sits inside real workflows: summarising, drafting, cleaning data, flagging anomalies. Human in the loop, sources attached.</p><div class="meta">PolicyBrief AI · Research Copilot · Data-Cleanse Agent · Anomaly Sentinel · Nudge Personalizer · Knowledge Broker</div></div>
+          </div>
+          <div class="division">
+            <div><div class="idx">DIV 03</div></div>
+            <div><h3>Agile Tools</h3><p class="dim">Lightweight, fast-to-deploy tools for a single job. Lower cost, quick to pilot, a practical on-ramp to the larger platforms.</p><div class="meta">LocalPulse · TrendSense · NudgeKit · PolicySim Lite · Contextualizer · PolicyConnect</div></div>
+          </div>
+          <div class="division">
+            <div><div class="idx">DIV 04</div></div>
+            <div><h3>Data Infrastructure &amp; APIs</h3><p class="dim">The plumbing: validation, cleaning, and a curated library of open models and datasets developers build on directly.</p><div class="meta">DataVerify · DataCleanse API · OpenEcon Hub</div></div>
+          </div>
+          <div class="division">
+            <div><div class="idx">DIV 05</div></div>
+            <div><h3>Vertical SaaS &amp; Advisory</h3><p class="dim">Sector products with trust-led distribution, plus the research arm, Meliora Nexus, that feeds fieldwork back into the platforms.</p><div class="meta">School Management System · Tax &amp; Advisory Suite · Meliora Nexus</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <li>
-                  <a href="javascript:void(0)">Testimonials</a>
-                </li>
+    <hr class="divider">
 
-              </ul>
+    <!-- FEATURED PLATFORMS -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal"><span class="eyebrow">Flagship platforms</span><h2>Built for institutions that run on data</h2></div>
+        <div class="grid grid-3">
+          <article class="card reveal"><div class="ic">◵</div><h3>GeoInsight</h3><p>Geo-spatial socio-economic analytics from satellite imagery, anonymised mobility, and local indicators, resolving blind spots surveys miss.</p><div class="badge-row"><span class="tag beta">Beta</span></div></article>
+          <article class="card reveal d1"><div class="ic">◈</div><h3>Foresight AI</h3><p>An intelligence layer for economic forecasting. Ingests structured and alternative data for real-time indicators and scenario forecasts.</p><div class="badge-row"><span class="tag pilot">Pilot</span></div></article>
+          <article class="card reveal d2"><div class="ic">⟐</div><h3>PolicyFlow</h3><p>Coordination for multi-stakeholder delivery: shared dashboards, task tracking, and accountability across bodies and partners.</p><div class="badge-row"><span class="tag beta">Beta</span></div></article>
+          <article class="card reveal"><div class="ic">◆</div><h3>DataGuard</h3><p>Privacy-preserving aggregation with differential privacy, so data disaggregates by demographic factors without exposing individuals.</p><div class="badge-row"><span class="tag available">Available</span></div></article>
+          <article class="card reveal d1"><div class="ic">◨</div><h3>PolicyLab</h3><p>An interactive sandbox for what-if analysis and stress testing shocks before real-world rollout.</p><div class="badge-row"><span class="tag pilot">Pilot</span></div></article>
+          <article class="card reveal d2"><div class="ic">⬡</div><h3>ModelForge</h3><p>Build agent-based and heterogeneous-agent models that capture the diversity classical models flatten.</p><div class="badge-row"><span class="tag roadmap">Roadmap</span></div></article>
+        </div>
+        <div style="margin-top:30px;" class="reveal"><a class="btn btn-ghost" href="products.html">See all 23 products, categorised &rarr;</a></div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- INDUSTRIES TABS -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal"><span class="eyebrow">Who we build for</span><h2>Aimed at your problem, whoever you are</h2></div>
+        <div data-tabs class="reveal">
+          <div class="tabs">
+            <button class="tab active" data-tab="gov">Governments</button>
+            <button class="tab" data-tab="research">Research</button>
+            <button class="tab" data-tab="enterprise">Enterprise</button>
+            <button class="tab" data-tab="sme">Institutions &amp; SMEs</button>
+          </div>
+          <div class="tab-panel active" data-panel="gov">
+            <div class="grid grid-3">
+              <div class="card"><h3>See the whole population</h3><p>GeoInsight and DataGuard reveal underserved groups without compromising privacy.</p></div>
+              <div class="card"><h3>Coordinate delivery</h3><p>PolicyFlow aligns departments, NGOs, and partners around one plan with clear accountability.</p></div>
+              <div class="card"><h3>Keep spending honest</h3><p>Anomaly Sentinel flags unusual procurement patterns for oversight teams.</p></div>
             </div>
           </div>
-          <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-            <div class="ud-widget">
-              <h5 class="ud-widget-title">Tools</h5>
-              <ul class="ud-widget-links">
-                <li>
-                  <a href="javascript:void(0)">Data Integration</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">AI-Driven Analytics</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Green Compute</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Impact Evaluations</a>
-                </li>
-              </ul>
+          <div class="tab-panel" data-panel="research">
+            <div class="grid grid-3">
+              <div class="card"><h3>Stop cleaning data</h3><p>DataVerify and the DataCleanse API harmonise messy, multi-source datasets.</p></div>
+              <div class="card"><h3>Synthesise faster</h3><p>PolicyBrief AI and Research Copilot accelerate review, citations kept intact.</p></div>
+              <div class="card"><h3>Export anywhere</h3><p>One-click export to Stata, R, and Python workflows.</p></div>
             </div>
           </div>
-          <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-            <div class="ud-widget">
-              <h5 class="ud-widget-title">Our Solutions</h5>
-              <ul class="ud-widget-links">
-                <li>
-                  <a href="javascript:void(0)">Consulting</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Custom CLIs</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Impact Analysis</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Sustainable Models</a>
-                </li>
-              </ul>
+          <div class="tab-panel" data-panel="enterprise">
+            <div class="grid grid-3">
+              <div class="card"><h3>Production data platforms</h3><p>Pipelines, warehouses, and lakehouses with lineage tracking and monitoring.</p></div>
+              <div class="card"><h3>Custom software</h3><p>Web platforms, dashboards, and APIs built to scale with clear ownership.</p></div>
+              <div class="card"><h3>Applied ML</h3><p>Forecasting and detection scoped to a measurable outcome.</p></div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-6 col-md-8 col-sm-10">
-            <div class="ud-widget">
-              <h5 class="ud-widget-title">Partners</h5>
-              <ul class="ud-widget-brands">
-                <li>
-                  <a href="https://ayroui.com/" rel="nofollow noopener" target="_blank">
-                    <img src="assets/images/footer/brands/ayroui.svg" alt="ayroui" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://ecommercehtml.com/" rel="nofollow noopener" target="_blank">
-                    <img src="assets/images/footer/brands/ecommerce-html.svg" alt="ecommerce-html" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://graygrids.com/" rel="nofollow noopener" target="_blank">
-                    <img src="assets/images/footer/brands/graygrids.svg" alt="graygrids" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://lineicons.com/" rel="nofollow noopener" target="_blank">
-                    <img src="assets/images/footer/brands/lineicons.svg" alt="lineicons" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://uideck.com/" rel="nofollow noopener" target="_blank">
-                    <img src="assets/images/footer/brands/uideck.svg" alt="uideck" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://tailwindtemplates.co/" rel="nofollow noopener" target="_blank">
-                    <img src="assets/images/footer/brands/tailwindtemplates.svg" alt="tailwindtemplates" />
-                  </a>
-                </li>
-              </ul>
+          <div class="tab-panel" data-panel="sme">
+            <div class="grid grid-3">
+              <div class="card"><h3>School Management</h3><p>Registry, attendance, fees, reports, and parent notices. Deliberately simple.</p></div>
+              <div class="card"><h3>Tax &amp; Advisory</h3><p>Invoicing, reporting, and compliance for small and medium enterprises.</p></div>
+              <div class="card"><h3>Advisory</h3><p>Meliora Nexus helps institutions modernise their systems.</p></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="ud-footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <ul class="ud-footer-bottom-left">
-              <li>
-                <a href="javascript:void(0)">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="javascript:void(0)">Support Policy</a>
-              </li>
-              <li>
-                <a href="javascript:void(0)">Terms of Service</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <p class="ud-footer-bottom-right">
-              <a href="https://mimperio.tech" style="color: white;">© 2025, Mimperio</a>
-            </p>
-          </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- PROCESS PIPELINE -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal"><span class="eyebrow">How we work</span><h2>A staged, lean delivery pipeline</h2></div>
+        <div class="pipeline reveal">
+          <div class="pflow"></div>
+          <div class="pnode"><div class="ph">PHASE 1</div><h3>Discovery</h3><p>We map the problem, the data, and one high-value use case to validate first.</p></div>
+          <div class="pnode"><div class="ph">PHASE 2</div><h3>Prototype</h3><p>A working proof of concept with lean tools that tests the core hypothesis fast.</p></div>
+          <div class="pnode"><div class="ph">PHASE 3</div><h3>Production</h3><p>We harden it into a reliable system, with monitoring and clear ownership.</p></div>
+          <div class="pnode"><div class="ph">PHASE 4</div><h3>Scale</h3><p>We add data, geographies, and features only as real demand appears.</p></div>
         </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="wrap" style="max-width:820px;">
+        <div class="section-head reveal"><span class="eyebrow">Transparency</span><h2>Questions we get asked</h2></div>
+        <div class="faq reveal">
+          <div class="faq-item"><button class="faq-q">Do you inflate case studies or invent clients? <span class="ind">+</span></button><div class="faq-a"><p>No. Everything on this site describes what our products are and what they can do, with honest maturity tags. We do not publish fabricated clients, testimonials, or delivered results.</p></div></div>
+          <div class="faq-item"><button class="faq-q">How do you handle data privacy? <span class="ind">+</span></button><div class="faq-a"><p>Privacy is a design default. DataGuard uses differential privacy and aggregation so data can be disaggregated for insight without exposing individuals, and every dataset carries documented lineage.</p></div></div>
+          <div class="faq-item"><button class="faq-q">Can we start small? <span class="ind">+</span></button><div class="faq-a"><p>Yes, and we recommend it. Our agile tools and single-use-case pilots are designed as a low-risk on-ramp before committing to a full platform.</p></div></div>
+          <div class="faq-item"><button class="faq-q">Which languages does the platform support? <span class="ind">+</span></button><div class="faq-a"><p>The site is available in English, French, Kinyarwanda, Kiswahili, and Amharic via the language switcher in the header. Product interfaces can be localised on request.</p></div></div>
+          <div class="faq-item"><button class="faq-q">Do you take on custom engineering? <span class="ind">+</span></button><div class="faq-a"><p>Yes. Alongside our products we build custom pipelines, software, and ML to the same standards, in your codebase. See the engagement models on the Pricing page.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-sm">
+      <div class="wrap">
+        <div class="cta reveal">
+          <span class="eyebrow" style="justify-content:center;">Start here</span>
+          <h2 style="margin-top:14px;">Tell us the problem. We will tell you the smallest thing worth building.</h2>
+          <p class="lead" style="margin:12px auto 26px;">No fixed sales pitch, no invented case studies. A short, honest conversation about scope, data, and cost.</p>
+          <a class="btn btn-primary" href="contact.html">Start a project</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-about">
+          <div class="brand"><span class="glyph"><svg class="mi-logo" viewBox="0 0 200 200" width="30" height="30" role="img" aria-label="Mimperio"><line x1="83.1" y1="70.5" x2="76.7" y2="59.4" stroke="#3ea8c8" stroke-width="9" stroke-linecap="round"/><line x1="119.2" y1="72.0" x2="122.3" y2="67.6" stroke="#3ea8c8" stroke-width="9" stroke-linecap="round"/><line x1="66.1" y1="102.7" x2="53.4" y2="103.8" stroke="#3ea8c8" stroke-width="9" stroke-linecap="round"/><line x1="80.4" y1="127.8" x2="74.4" y2="136.3" stroke="#3ea8c8" stroke-width="9" stroke-linecap="round"/><line x1="111.6" y1="132.0" x2="115.3" y2="142.3" stroke="#3ea8c8" stroke-width="9" stroke-linecap="round"/><line x1="129.5" y1="116.9" x2="137.5" y2="121.5" stroke="#3ea8c8" stroke-width="9" stroke-linecap="round"/><g class="mi-core"><circle cx="100" cy="100" r="30" fill="none" stroke="#3ea8c8" stroke-width="10"/><circle cx="100" cy="100" r="14" fill="none" stroke="#3ea8c8" stroke-width="9"/></g><circle class="mi-node mi-n1" cx="69" cy="46" r="12" fill="none" stroke="#3ea8c8" stroke-width="7"/><circle class="mi-node mi-n2" cx="135" cy="49" r="18" fill="none" stroke="#3ea8c8" stroke-width="9"/><circle class="mi-node mi-n3" cx="38" cy="105" r="12" fill="none" stroke="#3ea8c8" stroke-width="7"/><circle class="mi-node mi-n4" cx="64" cy="151" r="14" fill="none" stroke="#3ea8c8" stroke-width="8"/><circle class="mi-node mi-n5" cx="121" cy="158" r="13" fill="none" stroke="#3ea8c8" stroke-width="7.5"/><circle class="mi-node mi-n6" cx="154" cy="131" r="15" fill="none" stroke="#3ea8c8" stroke-width="8"/></svg></span><span class="name">MIMPERIO</span></div>
+          <p>A technology company building data platforms, applied AI, and software for development and enterprise. Provenance and privacy by default.</p>
+          <p class="mono mute" style="font-size:.74rem;">mimperio.tech</p>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html">Full catalog</a></li>
+            <li><a href="ai-workflows.html">AI Workflows</a></li>
+            <li><a href="products.html#platforms">Platforms</a></li>
+            <li><a href="products.html#infra">Infrastructure &amp; APIs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="about.html#nexus">Meliora Nexus</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="mailto:hello@mimperio.tech">hello@mimperio.tech</a></li>
+            <li><a href="contact.html">Start a project</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>&copy; <span data-year>2026</span> Mimperio. All rights reserved.</span>
+        <span>Provenance verified · Privacy by design</span>
       </div>
     </div>
   </footer>
-  ====== Footer End ====== -->
-
-  <!-- ====== Back To Top Start ====== -->
-  <a href="javascript:void(0)" class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-    <i class="lni lni-chevron-up"> </i>
-  </a>
-  <!-- ====== Back To Top End ====== -->
-
-  <!-- ====== All Javascript Files ====== -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/main.js"></script>
 
   <script>
-    // for header and footer
-    function loadHTML(id, file) {
-      fetch(file)
-        .then(response => response.text())
-        .then(data => document.getElementById(id).innerHTML = data);
+/* MIMPERIO - production client script. No external dependencies (Google Translate loads separately). */
+(function () {
+  'use strict';
+
+  // Year
+  document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+
+  // Mobile menu
+  var toggle = document.querySelector('.nav-toggle');
+  var menu = document.querySelector('.mobile-menu');
+  if (toggle && menu) toggle.addEventListener('click', function () { menu.classList.toggle('open'); });
+
+  // Scroll reveal
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && reveals.length) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  // Count-up
+  function animateCount(el) {
+    var to = parseFloat(el.getAttribute('data-to'));
+    var suffix = el.getAttribute('data-suffix') || '';
+    var prefix = el.getAttribute('data-prefix') || '';
+    var dec = parseInt(el.getAttribute('data-dec') || '0', 10);
+    var start = null, dur = 1400;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = prefix + (to * eased).toFixed(dec) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+      else el.textContent = prefix + to.toFixed(dec) + suffix;
     }
+    requestAnimationFrame(step);
+  }
+  var counters = document.querySelectorAll('[data-to]');
+  if ('IntersectionObserver' in window && counters.length) {
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { animateCount(en.target); cio.unobserve(en.target); } });
+    }, { threshold: 0.5 });
+    counters.forEach(function (el) { cio.observe(el); });
+  }
 
-    loadHTML("header-placeholder", "header.html");
-    loadHTML("footer-placeholder", "footer.html");
-  </script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(function (q) {
+    q.addEventListener('click', function () {
+      var item = q.closest('.faq-item');
+      var a = item.querySelector('.faq-a');
+      var open = item.classList.contains('open');
+      item.classList.toggle('open');
+      a.style.maxHeight = open ? null : a.scrollHeight + 'px';
+    });
+  });
 
-  <script>
-    // ==== for menu scroll
-    const pageLink = document.querySelectorAll(".ud-menu-scroll");
-    pageLink.forEach((elem) => {
-      elem.addEventListener("click", (e) => {
-        e.preventDefault();
-        document.querySelector(elem.getAttribute("href")).scrollIntoView({
-          behavior: "smooth",
-          offsetTop: 1 - 60,
-        });
+  // Tabs
+  document.querySelectorAll('[data-tabs]').forEach(function (group) {
+    var tabs = group.querySelectorAll('.tab');
+    var panels = group.querySelectorAll('.tab-panel');
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        var key = tab.getAttribute('data-tab');
+        tabs.forEach(function (t) { t.classList.toggle('active', t === tab); });
+        panels.forEach(function (p) { p.classList.toggle('active', p.getAttribute('data-panel') === key); });
       });
     });
-    // section menu active
-    function onScroll(event) {
-      const sections = document.querySelectorAll(".ud-menu-scroll");
-      const scrollPos =
-        window.pageYOffset ||
-        document.documentElement.scrollTop ||
-        document.body.scrollTop;
-      for (let i = 0; i < sections.length; i++) {
-        const currLink = sections[i];
-        const val = currLink.getAttribute("href");
-        const refElement = document.querySelector(val);
-        const scrollTopMinus = scrollPos + 73;
-        if (
-          refElement.offsetTop <= scrollTopMinus &&
-          refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
-        ) {
-          document
-            .querySelector(".ud-menu-scroll")
-            .classList.remove("active");
-          currLink.classList.add("active");
-        } else {
-          currLink.classList.remove("active");
-        }
+  });
+
+  // Language switcher dropdown open/close
+  var lang = document.querySelector('.lang');
+  var langBtn = document.querySelector('.lang-btn');
+  if (lang && langBtn) {
+    langBtn.addEventListener('click', function (e) { e.stopPropagation(); lang.classList.toggle('open'); });
+    document.addEventListener('click', function () { lang.classList.remove('open'); });
+  }
+
+  // Interactive terminal
+  var term = document.getElementById('term-log');
+  if (term) {
+    var lines = [
+      ['c', '› streaming GeoInsight satellite layers ...'],
+      ['e', '✓ ingestion pipeline online'],
+      ['c', '› validating PolicyFlow orchestration ...'],
+      ['e', '✓ provenance layer verified'],
+      ['w', '~ Foresight AI recalibrating scenario weights'],
+      ['e', '✓ differential privacy active']
+    ];
+    var i = 0;
+    function pushLine() {
+      var l = lines[i % lines.length];
+      var p = document.createElement('div');
+      p.className = l[0];
+      p.textContent = l[1];
+      term.appendChild(p);
+      while (term.children.length > 6) term.removeChild(term.firstChild);
+      i++;
+    }
+    pushLine(); pushLine();
+    var termTimer = setInterval(pushLine, 2600);
+    var btn = document.getElementById('term-run');
+    if (btn) btn.addEventListener('click', function () {
+      var p = document.createElement('div');
+      p.className = 'e';
+      var ms = (1 + Math.random() * 1.8).toFixed(1);
+      p.textContent = '✓ [' + new Date().toLocaleTimeString() + '] telemetry ping ok · ' + ms + 'ms';
+      term.appendChild(p);
+      while (term.children.length > 6) term.removeChild(term.firstChild);
+    });
+  }
+
+  // Contact form (endpoint-swappable, mailto fallback)
+  var form = document.getElementById('contact-form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var status = document.getElementById('form-status');
+      var endpoint = form.getAttribute('data-endpoint') || '';
+      var data = new FormData(form);
+      function done(msg) { if (status) { status.textContent = msg; status.style.display = 'block'; } form.reset(); }
+      if (endpoint && endpoint.indexOf('http') === 0) {
+        fetch(endpoint, { method: 'POST', body: data, headers: { Accept: 'application/json' } })
+          .then(function (r) { done(r.ok ? 'Message sent. We will reply within two business days.' : 'Could not send just now. Please email hello@mimperio.tech.'); })
+          .catch(function () { done('Could not send just now. Please email hello@mimperio.tech.'); });
+      } else {
+        var subject = encodeURIComponent('Project enquiry via mimperio.tech');
+        var body = encodeURIComponent('Name: ' + (data.get('name') || '') + '\nEmail: ' + (data.get('email') || '') + '\nInterest: ' + (data.get('interest') || '') + '\n\n' + (data.get('message') || ''));
+        window.location.href = 'mailto:hello@mimperio.tech?subject=' + subject + '&body=' + body;
+        done('Opening your email client. If nothing happens, email hello@mimperio.tech.');
       }
+    });
+  }
+})();
+
+/* ---- Google Translate integration (loaded via translate.google.com element script) ---- */
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: 'en', includedLanguages: 'en,fr,rw,sw,am', autoDisplay: false },
+    'google_translate_element'
+  );
+}
+function miSetLang(lang, label) {
+  var tries = 0;
+  var t = setInterval(function () {
+    var sel = document.querySelector('#google_translate_element select') || document.querySelector('select.goog-te-combo');
+    tries++;
+    if (sel) {
+      sel.value = lang;
+      sel.dispatchEvent(new Event('change'));
+      clearInterval(t);
+      var cur = document.getElementById('lang-current');
+      if (cur && label) cur.textContent = label;
+      document.querySelectorAll('.lang-menu button').forEach(function (b) {
+        b.classList.toggle('active', b.getAttribute('data-lang') === lang);
+      });
+      var lw = document.querySelector('.lang');
+      if (lw) lw.classList.remove('open');
+    } else if (tries > 40) {
+      clearInterval(t);
     }
-    window.document.addEventListener("scroll", onScroll);
+  }, 150);
+}
+
   </script>
-
-  <script>
-    let path = window.location.pathname;
-    if (path.endsWith(".html")) {
-      let newPath = path.replace(".html", "");
-      window.history.replaceState(null, null, newPath + window.location.search + window.location.hash);
-    }
-  </script>
-
-    <script>
-      // Hide Preloader After 2.5 Seconds
-      window.onload = function () {
-        setTimeout(() => {
-          document.getElementById("preloader").style.display = "none";
-        }, 1000); // Adjust time as needed (2.5 seconds)
-      };
-    </script>
-
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
